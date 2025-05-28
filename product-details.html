@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/pages/product-details.css">
+    <script defer src="./assets/js/product.js"></script>
+    <script defer src="./assets/js/product-details.js"></script>
+</head>
+<body>
+     <!-- HEADER -->
+        <section class="search-section">
+            <div class="location-search-container">
+                <div class="location-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Store Location: Lincoln - 344, Illinois, Chicago, USA</span>
+                </div>
+                <nav class="user-prefs">
+                    <div class="prefs-group">
+                        <button class="lang-btn">ENG <i class="fa-solid fa-caret-down"></i></button>
+                        <button class="currency-btn">USD <i class="fa-solid fa-caret-down"></i></button>
+                        <span class="separator">|</span>
+                    </div>
+                    <div class="auth-links">
+                        <a href="login.html" class="auth-link">Sign In</a>
+                        <span>/</span>
+                        <a href="signup.html" class="auth-link">Sign Up</a>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    
+        <section class="sub-navigation">
+            <nav>
+                <div class="sub-navigation-container">
+                    <a href="/" class="logo-link">
+                        <img src="./assets/images/logo.png" alt="Company logo" class="logo">
+                    </a>
+                    <div class="search-container">
+                        <form class="search-form">
+                            <div class="search-input-group">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" id="search-input" placeholder="Search by goods or services">
+                            </div>
+                            <button type="submit" class="search-button">Search</button>
+                        </form>
+                    </div>
+                    <div class="shop-preferences">
+                        <button class="icon-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <span>|</span>
+                        <button class="icon-button"><i class="fa-regular fa-heart"></i></button>
+                        <span>|</span>
+                        <div class="account-dropdown">
+                            <button class="icon-button"><i class="fa-regular fa-user"></i><i class="fa-solid fa-caret-down"></i></button>
+                        </div>
+                    </div>
+                    <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </nav>
+            <aside class="mobile-sidebar">
+                <div class="sidebar-header">
+                    <button class="close-sidebar"><i class="fa-solid fa-times"></i></button>
+                </div>
+                <div class="search-container-mobile">
+                    <form class="search-form">
+                        <div class="search-input-group">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="mobile-search-input" placeholder="Search by goods or services">
+                        </div>
+                        <button type="submit" class="search-button">Search</button>
+                    </form>
+                </div>
+                <div class="shop-preferences-mobile">
+                    <button class="icon-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <span>|</span>
+                    <button class="icon-button"><i class="fa-regular fa-heart"></i></button>
+                    <span>|</span>
+                    <div class="account-dropdown">
+                        <button class="icon-button"><i class="fa-regular fa-user"></i><i class="fa-solid fa-caret-down"></i></button>
+                    </div>
+                </div>
+                <nav class="mobile-links">
+                    <ul class="mobile-nav-list">
+                        <li><a href="index.html">How it Works</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="product.html" class="active">Marketplace</a></li>
+                        <li><a href="/#faq">FAQs</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <h5><a href="tel:+121955501114" class="phone-link">(219) 555-01114</a></h5>
+                </div>
+            </aside>
+            <div class="sidebar-overlay"></div>
+        </section>
+    
+        <section class="main-nav">
+            <div class="nav-container">
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="index.html">How it Works</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="product.html" class="active">Marketplace</a></li>
+                        <li><a href="/#faq">FAQs</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <h5><a href="tel:+121955501114" class="phone-link">(219) 555-01114</a></h5>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Main Content -->
+        <main class="details-container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-image">
+                    <img id="detail-image" src="" alt="Product Image">
+                </div>
+                <aside class="hero-aside">
+                    <!-- Product Title -->
+                    <h2 id="detail-title" class="product-title"></h2>
+                    
+                    <!-- Listing Date -->
+                    <div class="listing-date">
+                        <i class="fa-regular fa-clock"></i>
+                        <span id="detail-listed-date"></span>
+                    </div>
+
+                    <!-- User Info Box -->
+                    <div class="box">
+                        <div class="user-info-box">
+                            <div class="user-block">
+                                <img id="detail-avatar" class="avatar" src="" alt="User Avatar">
+                                <div class="user-info">
+                                    <h3 id="detail-name"></h3>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <span id="detail-rating"></span>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Action Buttons -->
+                            <div class="action-buttons">
+                                <button id="trade-button" class="footer-button">
+                                    <i class="fa-solid fa-arrows-turn-to-dots"></i> Propose Trade
+                                </button>
+                                <button id="message-button" class="footer-button message-btn">
+                                    <a href="chat.html" style="text-decoration: none;"> <i class="fa-regular fa-comment-dots"></i> Message Owner</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+            <!-- Tabs: Description & FAQ -->
+            <section class="tabs">
+                <div class="tab-buttons">
+                    <button data-tab="desc" class="active">Description</button>
+                    <button data-tab="faq">FAQ</button>
+                </div>
+                <div class="tab-content">
+                    <div id="desc" class="tab-panel active">
+                        <h4>Description</h4>
+                        <p id="detail-desc"></p>
+                        <div class="desc-info">
+                            <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                                <i class="fa-solid fa-right-left"></i>
+                                <div style="font-weight: bold;">Trade Terms</div>
+                            </div>
+                            <p>
+                                Looking to trade this product for items of similar value. Particularly interested in professional goods and services or a combination of high-end electronics. Open to discussing partial trades plus cash difference.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="faq" class="faq tab-panel">
+                        <h4>FAQ</h4>
+                        <div class="faq-container">
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>What’s included?</span>
+                                    <span class="icon">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Original box & accessories.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Warranty?</span>
+                                    <span class="icon">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>90-day seller warranty.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Warranty?</span>
+                                    <span class="icon">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>90-day seller warranty.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Warranty?</span>
+                                    <span class="icon">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>90-day seller warranty.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Safety Tips -->
+            <section class="safety-tips">
+                <h4>🔒 Safety Tips</h4>
+                <ul>
+                    <li>Meet in a public place.</li>
+                    <li>Inspect item before handing over payment.</li>
+                    <li>Use secure payment methods.</li>
+                </ul>
+                </section>
+
+                <!-- Recommended Services -->
+                <section class="recommended">
+                <h4>Recommended Services</h4>
+                <div class="products-grid" id="recommended-grid">
+                    <!-- JS injects 4 cards -->
+                </div>
+            </section>
+
+
+            <!-- Promotion Section -->
+            <section class="promotion">
+                <div class="promotion-container">
+                    <div class="pr-text">
+                        <h2>Start swapping smarter. Join the <br> Swapplee movement.</h2>
+                        <button>Join the Waitlist <span>&nearr;</span></button>
+                    </div>
+                    <div class="pr-img">
+                        <img src="./assets/images/shade.png" alt="" class="img-1">
+                        <img src="./assets/images/swivel.png" alt="" class="img-2">
+                    </div>
+                </div>
+                <div class="pr-btn">
+                    <div class="btn-1">
+                        <img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/ok--v1.png" alt="ok--v1" />
+                        <h5>Fraud protection, zero liability</h5>
+                    </div>
+                    <div class="btn-2">
+                        <img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/ok--v1.png" alt="ok--v1" />
+                        <h5>No personal guarantee</h5>
+                    </div>
+                    <div class="btn-3">
+                        <img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/ok--v1.png" alt="ok--v1" />
+                        <h5>Swap with your choice</h5>
+                    </div>
+                </div>
+
+            </section>
+            <!-- Promotion Section End-->
+        </main>
+
+        <!-- FOOTER -->
+    <footer class="footer" role="contentinfo" aria-label="Website footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <section class="footer-section" aria-labelledby="about-heading">
+                    <h2 id="about-heading" class="visually-hidden">About Swapplee</h2>
+                    <img src="./assets/images/logo.png" alt="Swapplee - Modern bartering platform" class="footer-logo" loading="lazy">
+                    <p class="footer-text">
+                        Swapplee is the modern bartering platform that helps you trade goods and services with real people in your community — simply, securely, and sustainably.
+                    </p>
+                </section>
+
+                <nav class="footer-section" aria-labelledby="company-heading">
+                    <h2 id="company-heading" class="footer-subtitle">Company</h2>
+                    <ul class="footer-list">
+                        <li><a href="about.html" aria-label="About our company">About</a></li>
+                        <li><a href="#services" aria-label="Our services">Services</a></li>
+                        <li><a href="index.html" aria-label="How it works">How It Works</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-section" aria-labelledby="help-heading">
+                    <h2 id="help-heading" class="footer-subtitle">Help</h2>
+                    <ul class="footer-list">
+                        <li><a href="/support" aria-label="Contact customer support">Customer Support</a></li>
+                        <li><a href="#" aria-label="Delivery information">Delivery Details</a></li>
+                        <li><a href="#" aria-label="Terms and conditions">Terms & Conditions</a></li>
+                        <li><a href="#" aria-label="Privacy policy">Privacy Policy</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-section" aria-labelledby="socials-heading">
+                    <h2 id="socials-heading" class="footer-subtitle">Socials</h2>
+                    <ul class="footer-socials">
+                        <li><a href="#" aria-label="Visit our Facebook page"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="Facebook"/></a></li>
+                        <li><a href="#" aria-label="Visit our Twitter profile"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/twitterx.png" alt="Twitter"/></a></li>
+                        <li><a href="#" aria-label="Visit our LinkedIn profile"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="LinkedIn"/></a></li>
+                        <li><a href="#" aria-label="Visit our YouTube channel"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/youtube-play.png" alt="YouTube"/></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <div id="footer-year" role="contentinfo">© <span id="year" aria-live="polite"></span> Swapplee. All rights reserved.</div>
+                <nav class="footer-legal" aria-label="Legal navigation">
+                    <a href="/terms" aria-label="Terms of service">Terms</a>
+                    <a href="/privacy" aria-label="Privacy policy">Privacy</a>
+                    <a href="/cookies" aria-label="Cookie policy">Cookies</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

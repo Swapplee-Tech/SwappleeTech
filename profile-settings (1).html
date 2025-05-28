@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Settings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/pages/profile-settings.css">
+</head>
+<body>
+   <!---------- Header Section ---------->
+    <header>
+        <!----------------- Location section  ------------------->
+        <section class="search-section">
+            <div class="location-search-container">
+                <div class="location-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Store Location: Lincoln - 344, Illinois, Chicago, USA</span>
+                </div>
+                <nav class="user-prefs">
+                    <div class="prefs-group">
+                        <button class="lang-btn">ENG <i class="fa-solid fa-caret-down"></i></button>
+                        <button class="currency-btn">USD <i class="fa-solid fa-caret-down"></i></button>
+                        <span class="separator">|</span>
+                    </div>
+                    <div class="auth-links">
+                        <a href="login.html" class="auth-link">Sign In</a>
+                        <span>/</span>
+                        <a href="signup.html "class="auth-link">Sign Up</a>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    
+        <section class="sub-navigation">
+            <nav>
+                <div class="sub-navigation-container">
+                    <a href="/" class="logo-link">
+                        <img src="./assets/images/logo.png" alt="Company logo" class="logo">
+                    </a>
+                    <div class="search-container">
+                        <form class="search-form">
+                            <div class="search-input-group">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" id="search-input" placeholder="Search by goods or services">
+                            </div>
+                            <button type="submit" class="search-button">Search</button>
+                        </form>
+                    </div>
+                    <div class="shop-preferences">
+                        <button class="icon-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <span>|</span>
+                        <button class="icon-button"><i class="fa-regular fa-heart"></i></button>
+                        <span>|</span>
+                        <div class="avatar-dropdown">
+                     <div class="avatar-stack">
+            <img src="./assets/images/avatar_profile.jpg" class="profile-avatar" id="topProfileAvatar" alt="User Avatar" />
+               <span class="user-name">Monday Obi</span>
+               </div>
+            <div class="dropdown-menu" id="avatarDropdownMenu">
+            <a href="profile.html">My Profile</a>
+            <a href="Passwordsecurity.html">Settings</a>
+            <hr>
+            <a href="logout.html">Logout</a>
+        </div>                  
+    
+        </div>
+                    </div>
+                    <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </nav>
+            <aside class="mobile-sidebar">
+                <div class="sidebar-header">
+                    <button class="close-sidebar"><i class="fa-solid fa-times"></i></button>
+                </div>
+                <div class="search-container-mobile">
+                    <form class="search-form">
+                        <div class="search-input-group">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="mobile-search-input" placeholder="Search by goods or services">
+                        </div>
+                        <button type="submit" class="search-button">Search</button>
+                    </form>
+                </div>
+                <div class="shop-preferences-mobile">
+                    <button class="icon-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <span>|</span>
+                    <button class="icon-button"><i class="fa-regular fa-heart"></i></button>
+                    <span>|</span>
+                          <div class="avatar-dropdown">
+                     <div class="avatar-stack">
+            <img src="./assets/images/avatar_profile.jpg" class="profile-avatar" id="topProfileAvatar" alt="User Avatar" />
+               <span class="user-name">Monday Obi</span>
+               </div>
+            <div class="dropdown-menu" id="avatarDropdownMenu">
+            <a href="profile.html">My Profile</a>
+            <a href="Passwordsecurity.html">Settings</a>
+            <hr>
+            <a href="logout.html">Logout</a>
+        </div>                  
+    
+        </div>
+                </div>
+                <nav class="mobile-links">
+                    <ul class="mobile-nav-list">
+                        <li><a href="overview.html"  >Overview</a></li>
+                        <li><a href="product.html">Marketplace</a></li>
+                        <li><a href="wallet.html">Wallet</a></li>
+                        <li><a href="chat.html" >Chat</a></li>
+                        <li><a href="profile-settings (1).html" class="active">My Profile</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <h5><a href="tel:+121955501114" class="phone-link">(219) 555-01114</a></h5>
+                </div>
+            </aside>
+            <div class="sidebar-overlay"></div>
+        </section>
+    
+        <section class="main-nav">
+            <div class="nav-container">
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="overview.html" >Overview</a></li>
+                        <li><a href="product.html">Marketplace</a></li>
+                        <li><a href="wallet.html">Wallet</a></li>
+                        <li><a href="chat.html" >Chat</a></li>
+                        <li><a href="profile-settings (1).html" class="active">My Profile</a></li>
+                    </ul>
+                </nav>
+                <div class="contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <h5><a href="tel:+121955501114" class="phone-link">(219) 555-01114</a></h5>
+                </div>
+            </div>
+        </section>
+        <!----------------- Main-Navigation Section End  ------------------->
+    </header>
+    <!---------- Header Section End---------->
+  <div class="container">
+    <aside class="sidebar">
+      <button class="back-btn">Settings</button>
+      <nav>
+        <ul>
+          <li class="active">Personal Details</li>
+        <a href="Businesssettings.html">  <li> KYC Verification</li></a>
+        </ul>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <div class="tabs">
+        <button class="tab active">Account Setting</button>
+        <a href="Passwordsecurity.html"><button class="tab">Password &amp; Security</button></a>
+      </div>
+      <form class="profile-form">
+         <span class="profile-picture-label">Your Profile Picture</span>
+        <div class="profile-picture-section">
+        <div class="profile-pic-section">
+                    <!-- Main profile picture uses id="profileImage" for JS to update -->
+                    <img src="./assets/images/avatar_profile.jpg" class="profile-pic" id="profileImage" alt="Profile Picture">
+                    <label for="profilePicInput" class="camera-icon">
+                        <input type="file" id="profilePicInput" accept="image/*" style="display:none" />
+                        <span>📷</span>
+                    </label>
+               
+                </div>
+         
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <fieldset>
+            <legend for="fullname">Full name</legend>
+            <input type="text" id="fullname" placeholder="e.g James Kelvin">
+</fieldset>
+          </div>
+          <div class="form-group">
+<fieldset>
+            <legend for="email">Email</legend>
+            <input type="text" id="text" placeholder="Please enter your email">
+            </fieldset>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <fieldset>
+            <legend for="username">Username</legend>
+            <input type="text" id="username" placeholder="Please enter your username">
+</fieldset>
+          </div>
+          <div class="form-group">
+            <fieldset>
+         <legend for="phone">Phone number</legend>
+            
+            <input type="text" id="phone" placeholder="Please enter your phone number">
+            </fieldset>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            
+            <label for="location">Select Location</label>
+            <select id="location">
+              <option value="">Select your location</option>
+              <option value="">Select a State</option>
+  <option value="Abia">Abia</option>
+  <option value="Adamawa">Adamawa</option>
+  <option value="Akwa Ibom">Akwa Ibom</option>
+  <option value="Anambra">Anambra</option>
+  <option value="Bauchi">Bauchi</option>
+  <option value="Bayelsa">Bayelsa</option>
+  <option value="Benue">Benue</option>
+  <option value="Borno">Borno</option>
+  <option value="Cross River">Cross River</option>
+  <option value="Delta">Delta</option>
+  <option value="Ebonyi">Ebonyi</option>
+  <option value="Edo">Edo</option>
+  <option value="Ekiti">Ekiti</option>
+  <option value="Enugu">Enugu</option>
+  <option value="FCT">Federal Capital Territory (Abuja)</option>
+  <option value="Gombe">Gombe</option>
+  <option value="Imo">Imo</option>
+  <option value="Jigawa">Jigawa</option>
+  <option value="Kaduna">Kaduna</option>
+  <option value="Kano">Kano</option>
+  <option value="Katsina">Katsina</option>
+  <option value="Kebbi">Kebbi</option>
+  <option value="Kogi">Kogi</option>
+  <option value="Kwara">Kwara</option>
+  <option value="Lagos">Lagos</option>
+  <option value="Nasarawa">Nasarawa</option>
+  <option value="Niger">Niger</option>
+  <option value="Ogun">Ogun</option>
+  <option value="Ondo">Ondo</option>
+  <option value="Osun">Osun</option>
+  <option value="Oyo">Oyo</option>
+  <option value="Plateau">Plateau</option>
+  <option value="Rivers">Rivers</option>
+  <option value="Sokoto">Sokoto</option>
+  <option value="Taraba">Taraba</option>
+  <option value="Yobe">Yobe</option>
+  <option value="Zamfara">Zamfara</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender">
+              <option value="">Select your gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row bio-row">
+          <div class="form-group full-width">
+            <label for="bio">Bio</label>
+            <textarea id="bio" rows="3" placeholder="Write your bio here e.g. your hobbies, interests ETC"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="update-profile-btn">Update Profile</button>      <button type="button" class="update-reset-btn">Upgrade your account</button>
+      </form>
+      
+    </main>
+
+  </div>
+  
+        <!---------- Footer Section ---------->
+        <footer class="footer" role="contentinfo" aria-label="Website footer">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <!-- Logo -->
+                    <section class="footer-section" aria-labelledby="about-heading">
+                        <h2 id="about-heading" class="visually-hidden">About Swapplee</h2>
+                        <img src="./assets/images/logo.png" alt="Swapplee - Modern bartering platform" class="footer-logo" loading="lazy">
+                        <p class="footer-text">
+                            Swapplee is the modern bartering platform that helps you trade goods and services with real people in your community — simply, securely, and sustainably.
+                        </p>
+                    </section>
+
+                    <!-- Company links -->
+                    <nav class="footer-section" aria-labelledby="company-heading">
+                        <h2 id="company-heading" class="footer-subtitle">Company</h2>
+                        <ul class="footer-list">
+                            <li><a href="about.html" aria-label="About our company">About</a></li>
+                            <li><a href="#services" aria-label="Our services">Services</a></li>
+                            <li><a href="index.html" aria-label="How it works">How It Works</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Help links -->
+                    <nav class="footer-section" aria-labelledby="help-heading">
+                        <h2 id="help-heading" class="footer-subtitle">Help</h2>
+                        <ul class="footer-list">
+                            <li><a href="#" aria-label="Contact customer support">Customer Support</a></li>
+                            <li><a href="#" aria-label="Delivery information">Delivery Details</a></li>
+                            <li><a href="#" aria-label="Terms and conditions">Terms & Conditions</a></li>
+                            <li><a href="#" aria-label="Privacy policy">Privacy Policy</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Socials -->
+                    <nav class="footer-section" aria-labelledby="socials-heading">
+                        <h2 id="socials-heading" class="footer-subtitle">Socials</h2>
+                        <ul class="footer-socials">
+                            <li><a href="#" aria-label="Visit our Facebook page"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="Facebook"/></a></li>
+                            <li><a href="#" aria-label="Visit our Twitter profile"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/twitterx.png" alt="Twitter"/></a></li>
+                            <li><a href="#" aria-label="Visit our LinkedIn profile"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="LinkedIn"/></a></li>
+                            <li><a href="#" aria-label="Visit our YouTube channel"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/youtube-play.png" alt="YouTube"/></a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-bottom">
+                    <div id="footer-year" role="contentinfo">© <span id="year" aria-live="polite"></span> Swapplee. All rights reserved.</div>
+                    <nav class="footer-legal" aria-label="Legal navigation">
+                        <a href="/terms" aria-label="Terms of service">Terms</a>
+                        <a href="/privacy" aria-label="Privacy policy">Privacy</a>
+                        <a href="/cookies" aria-label="Cookie policy">Cookies</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <!---------- Footer Section End ---------->
+    </main>
+
+
+  <script src="./assets/js/profile-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop by Swapping | Swapplee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/pages/product.css">
+    <script defer src="./assets/js/product.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+        <section class="search-section">
+            <div class="location-search-container">
+                <div class="location-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Store Location: Lincoln - 344, Illinois, Chicago, USA</span>
+                </div>
+                <nav class="user-prefs">
+                    <div class="prefs-group">
+                        <button class="lang-btn">ENG <i class="fa-solid fa-caret-down"></i></button>
+                        <button class="currency-btn">USD <i class="fa-solid fa-caret-down"></i></button>
+                        <span class="separator">|</span>
+                    </div>
+                    <div class="auth-links">
+                        <a href="login.html" class="auth-link">Sign In</a>
+                        <span>/</span>
+                        <a href="signup.html" class="auth-link">Sign Up</a>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    
+        <section class="sub-navigation">
+            <nav>
+                <div class="sub-navigation-container">
+                    <a href="/" class="logo-link">
+                        <img src="./assets/images/logo.png" alt="Company logo" class="logo">
+                    </a>
+                    <div class="search-container">
+                        <form class="search-form">
+                            <div class="search-input-group">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" id="search-input" placeholder="Search by goods or services">
+                            </div>
+                            <button type="submit" class="search-button">Search</button>
+                        </form>
+                    </div>
+                    <div class="shop-preferences">
+                        <button class="icon-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <span>|</span>
+                        <button class="icon-button"><i class="fa-regular fa-heart"></i></button>
+                        <span>|</span>
+                        <div class="account-dropdown">
+                            <button class="icon-button"><i class="fa-regular fa-user"></i><i class="fa-solid fa-caret-down"></i></button>
+                        </div>
+                    </div>
+                    <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </nav>
+            <aside class="mobile-sidebar">
+                <div class="sidebar-header">
+                    <button class="close-sidebar"><i class="fa-solid fa-times"></i></button>
+                </div>
+                <div class="search-container-mobile">
+                    <form class="search-form">
+                        <div class="search-input-group">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="mobile-search-input" placeholder="Search by goods or services">
+                        </div>
+                        <button type="submit" class="search-button">Search</button>
+                    </form>
+                </div>
+                <div class="shop-preferences-mobile">
+                    <button class="icon-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <span>|</span>
+                    <button class="icon-button"><i class="fa-regular fa-heart"></i></button>
+                    <span>|</span>
+                    <div class="account-dropdown">
+                        <button class="icon-button"><i class="fa-regular fa-user"></i><i class="fa-solid fa-caret-down"></i></button>
+                    </div>
+                </div>
+                <nav class="mobile-links">
+                    <ul class="mobile-nav-list">
+                        <li><a href="index.html">How it Works</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="product.html" class="active">Marketplace</a></li>
+                        <li><a href="/#faq">FAQs</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <h5><a href="tel:+121955501114" class="phone-link">(219) 555-01114</a></h5>
+                </div>
+            </aside>
+            <div class="sidebar-overlay"></div>
+        </section>
+    
+        <section class="main-nav">
+            <div class="nav-container">
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="index.html">How it Works</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="product.html" class="active">Marketplace</a></li>
+                        <li><a href="/#faq">FAQs</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <h5><a href="tel:+121955501114" class="phone-link">(219) 555-01114</a></h5>
+                </div>
+            </div>
+        </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <section class="trade-container">
+            <section class="products">
+                <h1>Shop by Swapping</h1>
+            </section>
+
+            <section class="trade">
+                <!-- Filters -->
+                <section class="filters">
+                    <div class="filters-heading">
+                        <h2>Filters</h2>
+                        <button>Clear All</button>
+                    </div>
+                    <div class="filters-container">
+                        <div class="looks">
+                            <label for="item" class="label">I am looking for</label>
+                            <input
+                            id="item"
+                            list="item-list"
+                            style="width:100%; padding:.5em; border:1px solid #DDD; border-radius:4px; outline: none;"
+                            >
+
+                            <datalist id="item-list">
+                                <option value="MacBook Pro 2023 (Like New)">
+                                <option value="Professional Photography Services">
+                                <option value="Electric Guitar (Like New)">
+                                <option value="High-end Audio Equipment">
+                            <!-- Add more data -->
+                            </datalist>
+                            <div class="filter-search">
+                                <form class="filter-search-form">
+                                    <div class="filter-search-input">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <input type="text" id="search-input" placeholder="Search for specific item">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <div class="have">
+                            <label for="item" class="label">I have</label>
+                            <input
+                            id="item"
+                            list="item-list"
+                            style="width:100%; padding:.5em; border:1px solid #DDD; border-radius:4px; outline: none;"
+                            >
+
+                            <datalist id="item-list">
+                                <option value="MacBook Pro 2023 (Like New)">
+                                <option value="Professional Photography Services">
+                                <option value="Electric Guitar (Like New)">
+                                <option value="High-end Audio Equipment">
+                            <!-- Add more data -->
+                            </datalist>
+                            <div class="filter-search">
+                                <form class="filter-search-form">
+                                    <div class="filter-search-input">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <input type="text" id="search-input" placeholder="Search for specific item">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="cupertino-switch">
+                            <input type="checkbox" id="switch1" />
+                            <label for="switch1" aria-checked="false" role="switch"></label>
+                            <p class="label">Match Trades Only</p>
+                        </div>
+
+                        <div class="filter-location">
+                            <label for="location" class="label">Location</label>
+                            <form class="filter-location-form">
+                                <div class="filter-location-input">
+                                    <img width="25" height="25" src="https://img.icons8.com/ios/50/marker--v1.png" alt="marker--v1"/>
+                                    <input type="text" id="location-input" placeholder="Search location">
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div class="categories">
+                            <div class="categories-header">
+                                <label for="categories" class="label">Categories</label>
+                                <label id="toggle-collapse" for="categories-dropdown" class="categories-drop"><i class="fa-solid fa-caret-up"></i></label>
+                            </div>
+                            <form id="categories-form"></form>
+                            <p id="toggle-categories">Show more</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="main-ratings">
+                            <div class="ratings-header">
+                                <label for="ratings" class="label">Ratings</label>
+                                <label id="ratings-collapse-toggle" class="drop">
+                                <i class="fa-solid fa-caret-up" id="ratings-caret-icon"></i>
+                                </label>
+                            </div>
+                            <form id="ratings-form"></form>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="brands">
+                            <div class="brands-header">
+                                <label for="brands" class="label">Brands</label>
+                                <label id="brands-collapse-toggle" for="brands-dropdown" class="drop">
+                                <i id="brands-caret-icon" class="fa-solid fa-caret-up"></i>
+                                </label>
+                            </div>
+                            <form id="brands-form"></form>
+                            <p id="brands-toggle">Show more</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="price">
+                            <div class="price-header">
+                                <label for="price" class="label">Price</label>
+                                <label id="price-collapse-toggle" style="margin-left: 200px; font-size: 20px;">
+                                <i id="price-caret-icon" class="fa-solid fa-caret-up"></i>
+                                </label>
+                            </div>
+
+                            <div class="price-body">
+                                <input type="range" id="price-slider" min="0" max="1000" value="500" />
+                                <div class="price-range-boxes">
+                                <input type="number" id="min-price" />
+                                <input type="number" id="max-price" />
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="divider"></div>
+
+                        <div class="quantity">
+                            <div class="quantity-header">
+                                <label for="quantity" class="label">Quantity</label>
+                                <label id="quantity-collapse-toggle" style="margin-top: 0px; font-size: 20px; margin-left: 170px;">
+                                <i id="quantity-caret-icon" class="fa-solid fa-caret-up"></i>
+                                </label>
+                            </div>
+
+                            <div class="quantity-body">
+                                <input type="range" id="quantity-slider" min="1" max="100" value="50" />
+                                <div class="quantity-range-boxes">
+                                <input type="number" id="min-qty" />
+                                <input type="number" id="max-qty" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Products -->
+                <section class="products-listing">
+                    <div class="product-heading">
+                        <h2>Showing 12 results from total 230</h2>
+                        <input
+                            id="product"
+                            list="product-list"
+                            placeholder="Popularity"
+                            style="width: 120px;padding:.5em; border:1px solid #DDD; border-radius:20px; outline: none;"
+                            >
+
+                            <datalist id="product-list">
+                                <option value="MacBook Pro 2023 (Like New)">
+                                <option value="Professional Photography Services">
+                                <option value="Electric Guitar (Like New)">
+                                <option value="High-end Audio Equipment">
+                            <!-- Add more data -->
+                            </datalist>
+                    </div>
+                    <div class="products-grid" id="productsGrid"></div>
+                    <div class="pagination-container"></div>
+                </section>
+            </section>
+        </section>
+
+        <!-- Promotion Section -->
+        <section class="promotion">
+            <div class="promotion-container">
+                <div class="pr-text">
+                    <h2>Start swapping smarter. Join the <br> Swapplee movement.</h2>
+                    <button>Join the Waitlist <span>&nearr;</span></button>
+                </div>
+                <div class="pr-img">
+                    <img src="./assets/images/shade.png" alt="" class="img-1">
+                    <img src="./assets/images/swivel.png" alt="" class="img-2">
+                </div>
+            </div>
+            <div class="pr-btn">
+                <div class="btn-1">
+                    <img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/ok--v1.png" alt="ok--v1" />
+                    <h5>Fraud protection, zero liability</h5>
+                </div>
+                <div class="btn-2">
+                    <img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/ok--v1.png" alt="ok--v1" />
+                    <h5>No personal guarantee</h5>
+                </div>
+                <div class="btn-3">
+                    <img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/ok--v1.png" alt="ok--v1" />
+                    <h5>Swap with your choice</h5>
+                </div>
+            </div>
+
+        </section>
+        <!-- Promotion Section End-->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo" aria-label="Website footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <section class="footer-section" aria-labelledby="about-heading">
+                    <h2 id="about-heading" class="visually-hidden">About Swapplee</h2>
+                    <img src="./assets/images/logo.png" alt="Swapplee - Modern bartering platform" class="footer-logo" loading="lazy">
+                    <p class="footer-text">
+                        Swapplee is the modern bartering platform that helps you trade goods and services with real people in your community — simply, securely, and sustainably.
+                    </p>
+                </section>
+
+                <nav class="footer-section" aria-labelledby="company-heading">
+                    <h2 id="company-heading" class="footer-subtitle">Company</h2>
+                    <ul class="footer-list">
+                        <li><a href="about.html" aria-label="About our company">About</a></li>
+                        <li><a href="#services" aria-label="Our services">Services</a></li>
+                        <li><a href="index.html" aria-label="How it works">How It Works</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-section" aria-labelledby="help-heading">
+                    <h2 id="help-heading" class="footer-subtitle">Help</h2>
+                    <ul class="footer-list">
+                        <li><a href="/support" aria-label="Contact customer support">Customer Support</a></li>
+                        <li><a href="#" aria-label="Delivery information">Delivery Details</a></li>
+                        <li><a href="#" aria-label="Terms and conditions">Terms & Conditions</a></li>
+                        <li><a href="#" aria-label="Privacy policy">Privacy Policy</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-section" aria-labelledby="socials-heading">
+                    <h2 id="socials-heading" class="footer-subtitle">Socials</h2>
+                    <ul class="footer-socials">
+                        <li><a href="#" aria-label="Visit our Facebook page"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="Facebook"/></a></li>
+                        <li><a href="#" aria-label="Visit our Twitter profile"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/twitterx.png" alt="Twitter"/></a></li>
+                        <li><a href="#" aria-label="Visit our LinkedIn profile"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="LinkedIn"/></a></li>
+                        <li><a href="#" aria-label="Visit our YouTube channel"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/youtube-play.png" alt="YouTube"/></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <div id="footer-year" role="contentinfo">© <span id="year" aria-live="polite"></span> Swapplee. All rights reserved.</div>
+                <nav class="footer-legal" aria-label="Legal navigation">
+                    <a href="/terms" aria-label="Terms of service">Terms</a>
+                    <a href="/privacy" aria-label="Privacy policy">Privacy</a>
+                    <a href="/cookies" aria-label="Cookie policy">Cookies</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

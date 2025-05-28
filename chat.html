@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/pages/chat.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <script defer type="module" src="./assets/js/chat.js"></script>
+    <script defer type="module" src="./assets/services/render.js"></script>
+    <title>Dashboard | Chat</title>
+</head>
+<body>
+    <header>
+        <!-- <section class="search-section">
+            <div class="location-search-container">
+                <div class="location-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Store Location: Lincoln - 344, Illinois, Chicago, USA</span>
+                </div>
+                <nav class="user-prefs">
+                    <div class="prefs-group">
+                        <button class="lang-btn">ENG <i class="fa-solid fa-caret-down"></i></button>
+                        <button class="currency-btn">USD <i class="fa-solid fa-caret-down"></i></button>
+                        <span class="separator">|</span>
+                    </div>
+                    <div class="auth-links">
+                        <a href="#signin" class="auth-link">Sign In</a>
+                        <span>/</span>
+                        <a href="#signup" class="auth-link">Sign Up</a>
+                    </div>
+                </nav>
+            </div>
+        </section> -->
+    
+        <section class="sub-navigation">
+            <nav>
+                <div class="sub-navigation-container">
+                    <a href="/" class="logo-link">
+                        <img src="./assets/images/logo.png" alt="Company logo" class="logo">
+                    </a>
+                    <div class="search-container">
+                        <form class="search-form">
+                            <div class="search-input-group">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" id="search-input" placeholder="Search by goods or services">
+                            </div>
+                            <button type="submit" class="search-button">Search</button>
+                        </form>
+                    </div>
+                    <div class="shop-preferences">
+                        <button class="icon-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <span>|</span>
+                        <button class="icon-button"><i class="fa-regular fa-heart"></i></button>
+                        <span>|</span>
+                        <div class="account-dropdown">
+                            <button class="icon-button"><i class="fa-regular fa-user"></i><i class="fa-solid fa-caret-down"></i></button>
+                        </div>
+                    </div>
+                    <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </nav>
+            <aside class="mobile-sidebar">
+                <div class="sidebar-header">
+                    <button class="close-sidebar"><i class="fa-solid fa-times"></i></button>
+                </div>
+                <div class="search-container-mobile">
+                    <form class="search-form">
+                        <div class="search-input-group">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="mobile-search-input" placeholder="Search by goods or services">
+                        </div>
+                        <button type="submit" class="search-button">Search</button>
+                    </form>
+                </div>
+                <div class="shop-preferences-mobile">
+                    <button class="icon-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <span>|</span>
+                    <button class="icon-button"><i class="fa-regular fa-heart"></i></button>
+                    <span>|</span>
+                    <div class="account-dropdown">
+                        <button class="icon-button"><i class="fa-regular fa-user"></i><i class="fa-solid fa-caret-down"></i></button>
+                    </div>
+                </div>
+                <nav class="mobile-links">
+                    <ul class="mobile-nav-list">
+                        <li><a href="overview.html">Overview</a></li>
+                        <li><a href="product.html">Marketplace</a></li>
+                        <li><a href="wallet.html">Wallet</a></li>
+                        <li><a href="chat.html" class="active">Chat Us</a></li>
+                        <li><a href="profile-settings (1).html">Profile</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <h5><a href="tel:+121955501114" class="phone-link">(219) 555-01114</a></h5>
+                </div>
+            </aside>
+            <div class="sidebar-overlay"></div>
+        </section>
+    
+        <section class="main-nav">
+            <div class="nav-container">
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="overview.html">Overview</a></li>
+                        <li><a href="product.html">Marketplace</a></li>
+                        <li><a href="wallet.html">Wallet</a></li>
+                        <li><a href="chat.html" class="active">Chat Us</a></li>
+                        <li><a href="profile-settings (1).html">My Profile</a></li>
+                    </ul>
+                </nav>
+                <div class="contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <h5><a href="tel:+121955501114" class="phone-link">(219) 555-01114</a></h5>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!---------- Header Section  End---------->
+    <!---------- Main Section---------->
+
+    <main>
+        <aside class="chat-sidebar">
+            <header class="chat-header">
+                <h2>Chat</h2>
+                <button id="new-chat">+ New Chat</button>
+            </header>
+            <div class="chat-search">
+                <input type="text" placeholder="Search" id="search">
+            </div>
+            <div class="tab">
+                <ul>
+                    <li data-tab="all" class="active-tab"><h5>All</h5></li>
+                    <li data-tab="unread"><h5>Unread</h5></li>
+                    <li data-tab="groups"><h5>Groups</h5></li>
+                </ul>
+                <div class="line"></div>
+            </div>
+            <nav class="chat-list" id="chat-list"></nav>
+        </aside>
+
+        <section class="chat-window" id="chat-window">
+            <div class="empty-state" id="empty">
+                <img src="./assets/images/logo.png" alt="Company Logo" class="chat-logo">
+                <p class="motto">“Connecting people & goods, one message at a time.”</p>
+            </div>
+            <header class="window-header" id="window-header" hidden>
+                <div class="user-info">
+                    <img src="" class="avatar" id="window-avatar">
+                    <div>
+                        <h3 id="window-name"></h3>
+                        <span class="status" id="window-status"></span>
+                    </div>
+                </div>
+                <button class="more">⋯</button>
+            </header>
+            <div class="messages" id="messages" hidden></div>
+            <footer class="window-footer" id="window-footer" hidden>
+                <div class="message-tools">
+                    <button id="attach-btn" class="icon-button" style="background: none; color: black;">
+                        <i class="fas fa-paperclip"></i>
+                    </button>
+                    <div id="attach-menu" class="attach-menu">
+                        <button data-type="document">
+                            <i class="fas fa-file"></i> Documents
+                        </button>
+                        <button data-type="camera">
+                            <i class="fas fa-camera"></i> Camera
+                        </button>
+                        <button data-type="media">
+                            <i class="fas fa-photo-video"></i> Photos & Videos
+                        </button>
+                    </div>
+                </div>
+                <textarea placeholder="Are you interested??" id="input-msg"></textarea>
+                <button id="send">Send ▶</button>
+                <input type="file" id="file-input" hidden multiple accept=".pdf,.doc,.docx,.txt">
+                <input type="file" id="media-input" hidden multiple accept="image/*,video/*">
+            </footer>
+        </section>
+    </main>
+
+            <!---------- Footer Section ---------->
+        <footer class="footer" role="contentinfo" aria-label="Website footer">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <!-- Logo -->
+                    <section class="footer-section" aria-labelledby="about-heading">
+                        <h2 id="about-heading" class="visually-hidden">About Swapplee</h2>
+                        <img src="./assets/images/logo.png" alt="Swapplee - Modern bartering platform" class="footer-logo" loading="lazy">
+                        <p class="footer-text">
+                            Swapplee is the modern bartering platform that helps you trade goods and services with real people in your community — simply, securely, and sustainably.
+                        </p>
+                    </section>
+
+                    <!-- Company links -->
+                    <nav class="footer-section" aria-labelledby="company-heading">
+                        <h2 id="company-heading" class="footer-subtitle">Company</h2>
+                        <ul class="footer-list">
+                            <li><a href="about.html" aria-label="About our company">About</a></li>
+                            <li><a href="#services" aria-label="Our services">Services</a></li>
+                            <li><a href="index.html" aria-label="How it works">How It Works</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Help links -->
+                    <nav class="footer-section" aria-labelledby="help-heading">
+                        <h2 id="help-heading" class="footer-subtitle">Help</h2>
+                        <ul class="footer-list">
+                            <li><a href="/support" aria-label="Contact customer support">Customer Support</a></li>
+                            <li><a href="#" aria-label="Delivery information">Delivery Details</a></li>
+                            <li><a href="#" aria-label="Terms and conditions">Terms & Conditions</a></li>
+                            <li><a href="#" aria-label="Privacy policy">Privacy Policy</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Socials -->
+                    <nav class="footer-section" aria-labelledby="socials-heading">
+                        <h2 id="socials-heading" class="footer-subtitle">Socials</h2>
+                        <ul class="footer-socials">
+                            <li><a href="#" aria-label="Visit our Facebook page"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="Facebook"/></a></li>
+                            <li><a href="#" aria-label="Visit our Twitter profile"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/twitterx.png" alt="Twitter"/></a></li>
+                            <li><a href="#" aria-label="Visit our LinkedIn profile"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="LinkedIn"/></a></li>
+                            <li><a href="#" aria-label="Visit our YouTube channel"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/youtube-play.png" alt="YouTube"/></a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-bottom">
+                    <div id="footer-year" role="contentinfo">© <span id="year" aria-live="polite"></span> Swapplee. All rights reserved.</div>
+                    <nav class="footer-legal" aria-label="Legal navigation">
+                        <a href="/terms" aria-label="Terms of service">Terms</a>
+                        <a href="/privacy" aria-label="Privacy policy">Privacy</a>
+                        <a href="/cookies" aria-label="Cookie policy">Cookies</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <!---------- Footer Section End ---------->
+</body>
+</html>

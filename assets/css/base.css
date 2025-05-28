@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --brand-purple: #8B44FF;
+    --brand-blue: #44B0FF;
+    --max-width: 1440px;
+    --horizontal-padding: 2rem;
+}

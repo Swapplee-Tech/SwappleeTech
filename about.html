@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/pages/about.css">
+    <script defer src="./assets/js/about.js"></script>
+    <title>About us | Swapple </title>
+</head>
+<body>
+     <!---------- Header Section ---------->
+    <header>
+        <!----------------- Location section  ------------------->
+        <section class="search-section">
+            <div class="location-search-container">
+                <div class="location-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Store Location: Lincoln - 344, Illinois, Chicago, USA</span>
+                </div>
+                <nav class="user-prefs">
+                    <div class="prefs-group">
+                        <button class="lang-btn">ENG <i class="fa-solid fa-caret-down"></i></button>
+                        <button class="currency-btn">USD <i class="fa-solid fa-caret-down"></i></button>
+                        <span class="separator">|</span>
+                    </div>
+                    <div class="auth-links">
+                        <a href="login.html" class="auth-link">Sign In</a>
+                        <span>/</span>
+                        <a href="signup.html "class="auth-link">Sign Up</a>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    
+        <section class="sub-navigation">
+            <nav>
+                <div class="sub-navigation-container">
+                    <a href="/" class="logo-link">
+                        <img src="./assets/images/logo.png" alt="Company logo" class="logo">
+                    </a>
+                    <div class="search-container">
+                        <form class="search-form">
+                            <div class="search-input-group">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" id="search-input" placeholder="Search by goods or services">
+                            </div>
+                            <button type="submit" class="search-button">Search</button>
+                        </form>
+                    </div>
+                    <div class="shop-preferences">
+                        <button class="icon-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <span>|</span>
+                        <button class="icon-button"><i class="fa-regular fa-heart"></i></button>
+                        <span>|</span>
+                        <div class="account-dropdown">
+                            <button class="icon-button"><i class="fa-regular fa-user"></i><i class="fa-solid fa-caret-down"></i></button>
+                        </div>
+                    </div>
+                    <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </nav>
+            <aside class="mobile-sidebar">
+                <div class="sidebar-header">
+                    <button class="close-sidebar"><i class="fa-solid fa-times"></i></button>
+                </div>
+                <div class="search-container-mobile">
+                    <form class="search-form">
+                        <div class="search-input-group">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="mobile-search-input" placeholder="Search by goods or services">
+                        </div>
+                        <button type="submit" class="search-button">Search</button>
+                    </form>
+                </div>
+                <div class="shop-preferences-mobile">
+                    <button class="icon-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <span>|</span>
+                    <button class="icon-button"><i class="fa-regular fa-heart"></i></button>
+                    <span>|</span>
+                    <div class="account-dropdown">
+                        <button class="icon-button"><i class="fa-regular fa-user"></i><i class="fa-solid fa-caret-down"></i></button>
+                    </div>
+                </div>
+                <nav class="mobile-links">
+                    <ul class="mobile-nav-list">
+                        <li><a href="/"  >How it Works</a></li>
+                        <li><a href="about.html"class="active">About</a></li>
+                        <li><a href="product.html">Marketplace</a></li>
+                        <li><a href="faq.html" >FAQs</a></li>
+                        <li><a href="contactpage.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <h5><a href="tel:+121955501114" class="phone-link">(219) 555-01114</a></h5>
+                </div>
+            </aside>
+            <div class="sidebar-overlay"></div>
+        </section>
+    
+        <section class="main-nav">
+            <div class="nav-container">
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="/" >How it Works</a></li>
+                        <li><a href="about.html" class="active">About</a></li>
+                        <li><a href="product.html">Marketplace</a></li>
+                        <li><a href="faq.html" >FAQs</a></li>
+                        <li><a href="contactpage.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <h5><a href="tel:+121955501114" class="phone-link">(219) 555-01114</a></h5>
+                </div>
+            </div>
+        </section>
+        <!----------------- Main-Navigation Section End  ------------------->
+    </header>
+    <!---------- Header Section End---------->
+    <main>
+  <header class="about-header">
+    <h1>ABOUT US</h1>
+    <p>At Swapplee Technologies Ltd, we’re creating a global platform to make bartering simple, secure, and accessible for everyone. Whether as an individual, a small business owner, a freelancer, or part of a rural community, Swapplee connects you to a worldwide network where you can exchange goods and services without cash. Founded in 2025, we’re on a mission to unlock the $1 trillion barter economy and empower 200 million users to trade smarter.
+</p>
+    <button onclick="scrollToContact()">Get in Touch</button>
+  </header>
+
+    <!-- Why Barter Section -->
+  <section class="barter-section">
+    <div class="container">
+      <h2>Why Barter with Swapplee?</h2>
+      <p class="intro">
+        Bartering is a timeless way to trade, but it's often held back by inefficiencies—mismatched needs, lack of trust, and geographic limits.
+        Swapplee changes that by bringing bartering into the digital age. Here’s why you’ll love trading with us:
+      </p>
+      <div class="features">
+        <div class="feature">
+          <h3> Save Money</h3>
+          <p>Trade what you have for what you need—no cash required. Swap items for items, crops for tools, services for tech, or anything else of value.</p>
+        </div>
+        <br>
+        <div class="feature">
+          <h3> Build Community</h3>
+          <p>Connect with users globally, from Lagos to rural U.S. towns, and form trusted relationships through our secure platform.</p>
+        </div>
+       <br>
+        <div class="feature">
+          <h3>Sustainable Trading</h3>
+          <p>Bartering reduces waste and promotes sustainability by reusing resources within communities.</p>
+        </div>
+        <br>
+        <div class="feature">
+          <h3> Accessible to All</h3>
+          <p>Whether you're in Nigeria, the U.S., or anywhere in the world, our platform is designed for everyone—small businesses, freelancers, farmers, and more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Why Barter Section End -->
+
+
+  <!-- Our Story Section -->
+  <section class="story-section">
+    
+    <div class="story-text">
+      <h2>Our Story</h2>
+      <p>
+        Swapplee was born out of a vision to make trade more inclusive and sustainable.
+        Founded in Lagos, Nigeria, and incorporated in Delaware, USA, in April 2025, we're a global company with a local heart.
+        Our team saw the potential in bartering to empower communities—whether it’s a farmer in Nigeria swapping yams for carpentry services
+        or a U.S. freelancer trading marketing skills for tech support.
+        We're building a platform that breaks down barriers, fosters trust, and creates opportunities for millions to thrive through cashless exchange.
+      </p>
+    </div>
+    <div class="story-images">
+      <img src="./assets/images/download.jpg" alt="Market Scene 1">
+      <img src="./assets/images/Library_Stool_Chair-3.png" alt="Market Scene 2">
+      <img src="./assets/images/Library_Stool_Chair-4.png" alt="Market Scene 3">
+      
+    </div>
+  </section>
+  <!-- Our Story Section End-->
+  <section class="team">
+    <h2>Meet our team</h2>
+    <div class="team-members">
+      <div class="member">
+  <img src="./assets/images/Jenny.png" >
+        <h4>Emmanuel C. Ikehi</h4>
+        <p style="color:rgb(218, 25, 160);">Founder & CEO</p>
+        <p>Leads Swapplee with a passion for economic empowerment.</p>
+        <i class="fa-brands fa-twitter fa-bounce"></i>   <i class="fa-brands fa-linkedin fa-bounce"></i>
+      </div>
+      <div class="member">
+          <img src="./assets/images/Jenny.png" >
+        <h4>Theophilus C. Amadi</h4>
+        <p style="color:rgb(218, 25, 160);">COO & Co-founder</p>
+        <p>Ensures operations run smoothly.</p>
+                <i class="fa-brands fa-twitter fa-bounce"></i>   <i class="fa-brands fa-linkedin fa-bounce"></i>
+      </div>
+      <div class="member">
+          <img src="./assets/images/Jenny.png" >
+        <h4>Raymond Chisom Uchenna</h4>
+        <p style="color:rgb(218, 25, 160);">CTO</p>
+        <p>Drives tech development & scale.</p>
+                <i class="fa-brands fa-twitter fa-bounce"></i>   <i class="fa-brands fa-linkedin fa-bounce"></i>
+      </div>
+      <div class="member">
+            <img src="./assets/images/Jenny.png" >
+        <h4>Prosper Ikechukwu</h4>
+        <p style="color:rgb(218, 25, 160);">Product Manager</p>
+        <p>Shapes features to meet market needs.</p>
+                <i class="fa-brands fa-twitter fa-bounce"></i>   <i class="fa-brands fa-linkedin fa-bounce"></i>
+      </div>
+        <div class="member">
+            <img src="./assets/images/Jenny.png" >
+        <h4>Solomon Akinsulire </h4>
+        <p style="color:rgb(218, 25, 160);">Front-end Developer</p>
+        <p>Create the seamless, user-friendly interface you’ll love</p>
+                <i class="fa-brands fa-twitter fa-bounce"></i>   <i class="fa-brands fa-linkedin fa-bounce"></i>
+      </div>  <div class="member">
+            <img src="./assets/images/Jenny.png" >
+        <h4>Muhammed Mumeenat</h4>
+        <p style="color:rgb(218, 25, 160);">Front-end Developer</p>
+        <p>Create the seamless, user-friendly interface you’ll love</p>
+                <i class="fa-brands fa-twitter fa-bounce"></i>   <i class="fa-brands fa-linkedin fa-bounce"></i>
+      </div>  <div class="member">
+            <img src="./assets/images/Jenny.png" >
+        <h4>Wendy Enyinnaya</h4>
+        <p style="color:rgb(218, 25, 160);">UI/UX Designer</p>
+        <p>Designs an engaging experience, ensuring Swapplee is easy and enjoyable to use.</p>
+                <i class="fa-brands fa-twitter fa-bounce"></i>   <i class="fa-brands fa-linkedin fa-bounce"></i>
+      </div>  <div class="member">
+            <img src="./assets/images/Jenny.png" >
+        <h4>Akintide Alo, </h4>
+        <p style="color:rgb(218, 25, 160);">Back-end Developer</p>
+        <p>Powers the systems that keep Swapplee running smoothly behind the scenes</p>
+                <i class="fa-brands fa-twitter fa-bounce"></i>   <i class="fa-brands fa-linkedin fa-bounce"></i>
+      </div>
+    </div>
+  </section>
+        <!---------- Promotion Section ---------->
+        <section class="promotion">
+            <div class="promotion-container">
+                <div class="pr-text">
+                    <h2>Start swapping smarter. Join the <br> Swapplee movement.</h2>
+                    <button>Join the Waitlist <span>&nearr;</span></button>
+                </div>
+                <div class="pr-img">
+                    <img src="./assets/images/shade.png" alt="" class="img-1">
+                    <img src="./assets/images/swivel.png" alt="" class="img-2">
+                </div>
+            </div>
+            <div class="pr-btn">
+                <div class="btn-1">
+                    <img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/ok--v1.png" alt="ok--v1" />
+                    <h5>Fraud protection, zero liability</h5>
+                </div>
+                <div class="btn-2">
+                    <img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/ok--v1.png" alt="ok--v1" />
+                    <h5>No personal guarantee</h5>
+                </div>
+                <div class="btn-3">
+                    <img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/ok--v1.png" alt="ok--v1" />
+                    <h5>Swap with your choice</h5>
+                </div>
+            </div>
+
+        </section>
+        <!---------- Promotion Section End ---------->
+
+        <!---------- Footer Section ---------->
+        <footer class="footer" role="contentinfo" aria-label="Website footer">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <!-- Logo -->
+                    <section class="footer-section" aria-labelledby="about-heading">
+                        <h2 id="about-heading" class="visually-hidden">About Swapplee</h2>
+                        <img src="./assets/images/logo.png" alt="Swapplee - Modern bartering platform" class="footer-logo" loading="lazy">
+                        <p class="footer-text">
+                            Swapplee is the modern bartering platform that helps you trade goods and services with real people in your community — simply, securely, and sustainably.
+                        </p>
+                    </section>
+
+                    <!-- Company links -->
+                    <nav class="footer-section" aria-labelledby="company-heading">
+                        <h2 id="company-heading" class="footer-subtitle">Company</h2>
+                        <ul class="footer-list">
+                            <li><a href="about.html" aria-label="About our company">About</a></li>
+                            <li><a href="#services" aria-label="Our services">Services</a></li>
+                            <li><a href="index.html" aria-label="How it works">How It Works</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Help links -->
+                    <nav class="footer-section" aria-labelledby="help-heading">
+                        <h2 id="help-heading" class="footer-subtitle">Help</h2>
+                        <ul class="footer-list">
+                            <li><a href="#" aria-label="Contact customer support">Customer Support</a></li>
+                            <li><a href="#" aria-label="Delivery information">Delivery Details</a></li>
+                            <li><a href="#" aria-label="Terms and conditions">Terms & Conditions</a></li>
+                            <li><a href="#" aria-label="Privacy policy">Privacy Policy</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Socials -->
+                    <nav class="footer-section" aria-labelledby="socials-heading">
+                        <h2 id="socials-heading" class="footer-subtitle">Socials</h2>
+                        <ul class="footer-socials">
+                            <li><a href="#" aria-label="Visit our Facebook page"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="Facebook"/></a></li>
+                            <li><a href="#" aria-label="Visit our Twitter profile"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/twitterx.png" alt="Twitter"/></a></li>
+                            <li><a href="#" aria-label="Visit our LinkedIn profile"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="LinkedIn"/></a></li>
+                            <li><a href="#" aria-label="Visit our YouTube channel"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/youtube-play.png" alt="YouTube"/></a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-bottom">
+                    <div id="footer-year" role="contentinfo">© <span id="year" aria-live="polite"></span> Swapplee. All rights reserved.</div>
+                    <nav class="footer-legal" aria-label="Legal navigation">
+                        <a href="/terms" aria-label="Terms of service">Terms</a>
+                        <a href="/privacy" aria-label="Privacy policy">Privacy</a>
+                        <a href="/cookies" aria-label="Cookie policy">Cookies</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <!---------- Footer Section End ---------->
+  </main>
+
+
+
+
+</body>
+</html>

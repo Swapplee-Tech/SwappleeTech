@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wallet Page - Complete Demo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/pages/wallet.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+      <!---------- Header Section ---------->
+    <header>
+        <!----------------- Location section  ------------------->
+        <section class="search-section">
+            <div class="location-search-container">
+                <div class="location-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Store Location: Lincoln - 344, Illinois, Chicago, USA</span>
+                </div>
+                <nav class="user-prefs">
+                    <div class="prefs-group">
+                        <button class="lang-btn">ENG <i class="fa-solid fa-caret-down"></i></button>
+                        <button class="currency-btn">USD <i class="fa-solid fa-caret-down"></i></button>
+                        <span class="separator">|</span>
+                    </div>
+                    <div class="auth-links">
+                        <a href="login.html" class="auth-link">Sign In</a>
+                        <span>/</span>
+                        <a href="signup.html "class="auth-link">Sign Up</a>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    
+        <section class="sub-navigation">
+            <nav>
+                <div class="sub-navigation-container">
+                    <a href="/" class="logo-link">
+                        <img src="./assets/images/logo.png" alt="Company logo" class="logo">
+                    </a>
+                    <div class="search-container">
+                        <form class="search-form">
+                            <div class="search-input-group">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" id="search-input" placeholder="Search by goods or services">
+                            </div>
+                            <button type="submit" class="search-button">Search</button>
+                        </form>
+                    </div>
+                    <div class="shop-preferences">
+                        <button class="icon-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <span>|</span>
+                        <button class="icon-button"><i class="fa-regular fa-heart"></i></button>
+                        <span>|</span>
+                        <div class="avatar-dropdown">
+                     <div class="avatar-stack">
+            <img src="./assets/images/avatar_profile.jpg" class="profile-avatar" id="topProfileAvatar" alt="User Avatar" />
+               <span class="user-name">Monday Obi</span>
+               </div>
+            <div class="dropdown-menu" id="avatarDropdownMenu">
+            <a href="profile.html">My Profile</a>
+            <a href="Passwordsecurity.html">Settings</a>
+            <hr>
+            <a href="logout.html">Logout</a>
+        </div>                  
+    
+        </div>
+                    </div>
+                    <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </nav>
+            <aside class="mobile-sidebar">
+                <div class="sidebar-header">
+                    <button class="close-sidebar"><i class="fa-solid fa-times"></i></button>
+                </div>
+                <div class="search-container-mobile">
+                    <form class="search-form">
+                        <div class="search-input-group">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="mobile-search-input" placeholder="Search by goods or services">
+                        </div>
+                        <button type="submit" class="search-button">Search</button>
+                    </form>
+                </div>
+                <div class="shop-preferences-mobile">
+                    <button class="icon-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <span>|</span>
+                    <button class="icon-button"><i class="fa-regular fa-heart"></i></button>
+                    <span>|</span>
+                          <div class="avatar-dropdown">
+                     <div class="avatar-stack">
+            <img src="./assets/images/avatar_profile.jpg" class="profile-avatar" id="topProfileAvatar" alt="User Avatar" />
+               <span class="user-name">Monday Obi</span>
+               </div>
+            <div class="dropdown-menu" id="avatarDropdownMenu">
+            <a href="profile.html">My Profile</a>
+            <a href="Passwordsecurity.html">Settings</a>
+            <hr>
+            <a href="logout.html">Logout</a>
+        </div>                  
+    
+        </div>
+                </div>
+                <nav class="mobile-links">
+                    <ul class="mobile-nav-list">
+                        <li><a href="overview.html">Overview</a></li>
+                        <li><a href="product.html">Marketplace</a></li>
+                        <li><a href="wallet.html" class="active">Wallet</a></li>
+                        <li><a href="chat.html" >Chat</a></li>
+                        <li><a href="profile-settings (1).html" >My Profile</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <h5><a href="tel:+121955501114" class="phone-link">(219) 555-01114</a></h5>
+                </div>
+            </aside>
+            <div class="sidebar-overlay"></div>
+        </section>
+    
+        <section class="main-nav">
+            <div class="nav-container">
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="overview.html" >Overview</a></li>
+                        <li><a href="product.html">Marketplace</a></li>
+                        <li><a href="wallet.html" class="active">Wallet</a></li>
+                        <li><a href="chat.html" >Chat</a></li>
+                        <li><a href="profile-settings (1).html" >My Profile</a></li>
+                    </ul>
+                </nav>
+                <div class="contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <h5><a href="tel:+121955501114" class="phone-link">(219) 555-01114</a></h5>
+                </div>
+            </div>
+        </section>
+        <!----------------- Main-Navigation Section End  ------------------->
+    </header>
+    <!---------- Header Section End---------->
+    <div class="wallet-container">
+        <!-- Wallet Balance Card -->
+     <div class="wallet-balance-card">
+  <div class="wallet-balance-content">
+      <div class="wallet-balance-left">
+          <div class="wallet-balance-label">Wallet Balance</div>
+          <div class="wallet-balance-amount">125,000 <span class="wallet-balance-currency">SWP</span></div>
+          <div class="wallet-id-pill">
+              <span id="walletIdText">Wallet ID: WAL-1234567890</span>
+              <button class="copy-id-btn" title="Copy Wallet ID">
+                  <i class="fa-regular fa-copy"></i>
+              </button>
+          </div>
+      </div>
+      <div class="wallet-balance-right">
+          <div class="wallet-info-box available-box">
+              <div class="wallet-info-icon"><i class="fa-regular fa-file-lines"></i></div>
+              <div class="wallet-info-label">Available</div>
+              <div class="wallet-info-amount">85,000</div>
+          </div>
+          <div class="wallet-info-box locked-box">
+              <div class="wallet-info-icon"><i class="fa-solid fa-lock"></i></div>
+              <div class="wallet-info-label">Locked in Trades</div>
+              <div class="wallet-info-amount">40,000</div>
+          </div>
+      </div>
+  </div>
+  <div class="wallet-balance-bg"></div>
+</div>
+            <!-- Action Buttons -->
+            <div class="wallet-actions">
+                <button class="wallet-action add-funds" id="openAddFunds">
+                    <i class="fa-solid fa-plus"></i> Add Funds
+                </button>
+                <button class="wallet-action withdraw" id="openWithdraw">
+                    <i class="fa-solid fa-arrow-down"></i> Withdraw
+                </button>
+                <button class="wallet-action send" id="openSend">
+                    <i class="fa-solid fa-paper-plane"></i> Send to User
+                </button>
+            </div>
+        </div>
+        <!-- Transaction History -->
+        <div class="wallet-history-section">
+            <div class="wallet-history-header">
+                <div class="wallet-history-title">Transaction History</div>
+                <div class="wallet-history-filters">
+                    <select id="transactionFilter">
+                        <option>All Transactions</option>
+                        <option>Completed</option>
+                        <option>Pending</option>
+                        <option>Failed</option>
+                    </select>
+                    <input type="date" id="transactionDate">
+                </div>
+            </div>
+            <div class="wallet-history-table-container">
+                <table class="wallet-history-table">
+                    <thead>
+                        <tr>
+                            <th>Transaction</th>
+                            <th>Amount</th>
+                            <th>Date & Time</th>
+                            <th>Status</th>
+                            <th>Reference ID</th>
+                        </tr>
+                    </thead>
+                    <tbody id="walletHistoryBody">
+                        <!-- Transactions will be rendered here by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+         <div class="escrow-dropdown-container">
+    <div class="escrow-dropdown-header" tabindex="0" id="escrowHeader">
+      <span class="escrow-dropdown-title">Escrow &amp; Locked Funds</span>
+      <button
+        class="escrow-dropdown-toggle"
+        id="escrowToggle"
+        aria-label="Toggle escrow dropdown"
+      >
+        <svg width="20" height="20" viewBox="0 0 20 20">
+          <polyline
+            points="6 8 10 12 14 8"
+            fill="none"
+            stroke="#38314b"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="escrow-dropdown-panel" id="escrowPanel">
+      <div class="escrow-dropdown-row">
+        <div>
+          <div class="escrow-dropdown-label">Samsung TV Trade</div>
+          <div class="escrow-dropdown-trade-id">Trade ID: TRD-24680</div>
+          <div class="escrow-dropdown-detail-label">Locked on:</div>
+          <div class="escrow-dropdown-detail-label">Expected release:</div>
+          <div class="escrow-dropdown-detail-label">Condition:</div>
+        </div>
+        <div style="text-align:right; min-width:200px;">
+          <div class="escrow-dropdown-value">40,000</div>
+          <div style="height:33px;"></div>
+          <div class="escrow-dropdown-detail-value">May 18, 2025</div>
+          <div class="escrow-dropdown-detail-value">May 25, 2025</div>
+          <div class="escrow-dropdown-detail-value">Awaiting item delivery confirmation</div>
+          <div>
+            <a class="escrow-dropdown-link" href="#">View trade details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Popups/Modals -->
+    <div class="modal-overlay" id="modalOverlay"></div>
+
+    <!-- Add Funds Modal -->
+    <div class="modal add-funds-modal" id="addFundsModal">
+        <button class="modal-close" data-close-modal>&times;</button>
+        <h3>Add funds to your wallet</h3>
+        <form id="addFundsForm" autocomplete="off">
+            <label class="input-label" for="addFundsAmount">Amount (SWP)</label>
+            <div class="input-currency">
+                <span></span>
+                <input type="number" id="addFundsAmount" placeholder="0" min="0" required>
+            </div>
+            <div class="section-divider"></div>
+            <div class="input-label payment-label">Payment method</div>
+            <div class="payment-methods">
+                <label class="payment-option active">
+                    <input type="radio" name="paymentMethod" value="card" checked>
+                    <div>
+                        <div class="option-title">Credit or Debit Card</div>
+                        <div class="option-desc">Instant funding with 1.5% fee</div>
+                    </div>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="bank">
+                    <div>
+                        <div class="option-title">Bank Transfer</div>
+                        <div class="option-desc">Free, processed within 24 hours</div>
+                    </div>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="ussd">
+                    <div>
+                        <div class="option-title">USSD Payment</div>
+                        <div class="option-desc">Quick payment via mobile</div>
+                    </div>
+                </label>
+            </div>
+            <div class="section-divider"></div>
+            <div class="card-details">
+                <div class="col">
+                    <label class="input-label">Name on card</label>
+                    <input type="text" placeholder="Cardholder's name" required>
+                </div>
+                <div class="col">
+                    <label class="input-label">Expiry Date</label>
+                    <input type="text" placeholder="06/2025" required>
+                </div>
+                <div class="col">
+                    <label class="input-label">Card number</label>
+                    <input type="text" placeholder="Card number" required>
+                </div>
+                <div class="col">
+                    <label class="input-label">CVV</label>
+                    <input type="text" placeholder="876" required>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Make Payment</button>
+        </form>
+    </div>
+
+    <!-- Withdraw Modal -->
+   <div class="modal withdraw-modal" id="withdrawModal">
+    <button class="modal-close" data-close-modal>&times;</button>
+    <h3 class="withdraw-title">Withdraw Funds</h3>
+    <form id="withdrawForm" autocomplete="off">
+        <div class="withdraw-divider"></div>
+        <div class="withdraw-alert">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span>Minimum withdrawal amount is 1,000. Withdrawals are processed within 24 hours.</span>
+        </div>
+<div class="modal add-bank-modal" id="addBankModal">
+    <button class="modal-close" data-close-modal>&times;</button>
+    <h3 class="add-bank-title">Add New Bank Account</h3>
+    <form id="addBankForm" autocomplete="off">
+        <label class="input-label" for="bankName">Bank Name</label>
+            <option value="">Select Bank</option>
+    <select id="bankName" class="add-bank-input" required>
+    <option value="">Select Bank</option>
+    <option value="Access Bank">Access Bank</option>
+    <option value="Citibank">Citibank</option>
+    <option value="Ecobank Nigeria">Ecobank Nigeria</option>
+    <option value="Fidelity Bank">Fidelity Bank</option>
+    <option value="First Bank of Nigeria">First Bank of Nigeria</option>
+    <option value="First City Monument Bank (FCMB)">First City Monument Bank (FCMB)</option>
+    <option value="Globus Bank">Globus Bank</option>
+    <option value="Guaranty Trust Bank (GTBank)">Guaranty Trust Bank (GTBank)</option>
+    <option value="Heritage Bank">Heritage Bank</option>
+    <option value="Jaiz Bank">Jaiz Bank</option>
+    <option value="Keystone Bank">Keystone Bank</option>
+    <option value="Lotus Bank">Lotus Bank</option>
+    <option value="Opay (Paycom)">Opay (Paycom)</option>
+    <option value="Kuda Microfinance Bank">Kuda Microfinance Bank</option>
+    <option value="Moniepoint Microfinance Bank">Moniepoint Microfinance Bank</option>
+    <option value="PalmPay">PalmPay</option>
+    <option value="Parallex Bank">Parallex Bank</option>
+    <option value="Polaris Bank">Polaris Bank</option>
+    <option value="Providus Bank">Providus Bank</option>
+    <option value="Stanbic IBTC Bank">Stanbic IBTC Bank</option>
+    <option value="Standard Chartered Bank">Standard Chartered Bank</option>
+    <option value="Sterling Bank">Sterling Bank</option>
+    <option value="SunTrust Bank">SunTrust Bank</option>
+    <option value="TAJ Bank">TAJ Bank</option>
+    <option value="Titan Trust Bank">Titan Trust Bank</option>
+    <option value="Union Bank of Nigeria">Union Bank of Nigeria</option>
+    <option value="United Bank for Africa (UBA)">United Bank for Africa (UBA)</option>
+    <option value="Unity Bank">Unity Bank</option>
+    <option value="VFD Microfinance Bank">VFD Microfinance Bank</option>
+    <option value="Wema Bank">Wema Bank</option>
+    <option value="Zenith Bank">Zenith Bank</option>
+    <!-- Mobile/Fintech/More MFIs -->
+    <option value="Rubies Microfinance Bank">Rubies Microfinance Bank</option>
+    <option value="Sparkle Microfinance Bank">Sparkle Microfinance Bank</option>
+    <option value="Carbon (One Finance)">Carbon (One Finance)</option>
+    <option value="ALAT by Wema">ALAT by Wema</option>
+    <option value="Mint Finex MFB">Mint Finex MFB</option>
+    <option value="Eyowo MFB">Eyowo MFB</option>
+    <option value="GoMoney MFB">GoMoney MFB</option>
+    <option value="9mobile 9Pay">9mobile 9Pay</option>
+    <option value="PayAttitude Digital MFB">PayAttitude Digital MFB</option>
+    <option value="FSDH Merchant Bank">FSDH Merchant Bank</option>
+    <option value="Coronation Merchant Bank">Coronation Merchant Bank</option>
+    <option value="Rand Merchant Bank">Rand Merchant Bank</option>
+    <option value="Nova Merchant Bank">Nova Merchant Bank</option>
+    <!-- Add or remove as needed -->
+        </select>
+        <label class="input-label" for="accountNumber">Account Number</label>
+        <input type="text" id="accountNumber" class="add-bank-input" maxlength="10" pattern="\d{10}" placeholder="Enter 10-digit Account Number" required>
+        <label class="input-label" for="accountName">Account Name</label>
+        <input type="text" id="accountName" class="add-bank-input" placeholder="Enter Account Name" required>
+        <button type="submit" class="submit-btn add-bank-btn">Add Account</button>
+    </form>
+</div>
+        <label class="input-label" for="withdrawAmount">Amount (NGN)</label>
+        <div class="input-currency">
+            <span>₦</span>
+            <input type="number" id="withdrawAmount" placeholder="0" min="1000" required>
+        </div>
+        <div class="input-label bank-label">Bank account</div>
+        <div class="bank-account-options">
+            <label class="bank-account-option active">
+                <input type="radio" name="bankAccount" value="firstbank" checked>
+                <div class="bank-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="bank-details">
+                    <span class="bank-name">First Bank</span>
+                    <span class="bank-meta">0123456789 &bull; John Doe</span>
+                </div>
+            </label>
+            <label class="bank-account-option">
+                <input type="radio" name="bankAccount" value="gtbank">
+                <div class="bank-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="bank-details">
+                    <span class="bank-name">GTBank</span>
+                    <span class="bank-meta">0123456789 &bull; John Doe</span>
+                </div>
+            </label>
+        </div>
+        <div class="add-bank-link"><a href="#">+ Add New Bank Account</a></div>
+        <button type="submit" class="submit-btn withdraw-btn">Withdraw</button>
+    </form>
+</div>
+
+    <!-- Send to User Modal -->
+   <div class="modal send-modal" id="sendModal">
+    <button class="modal-close" data-close-modal>&times;</button>
+    <h3 class="send-title">Send to Another User</h3>
+    <form id="sendForm" autocomplete="off">
+        <div class="send-divider"></div>
+        <label class="input-label" for="sendWallet">Recipient's Wallet ID or Username</label>
+        <input type="text" id="sendWallet" class="send-input" placeholder="Enter Recipient's Wallet ID or Username" required>
+        <label class="input-label" for="sendAmount">Amount (NGN)</label>
+        <div class="input-currency">
+            <span>₦</span>
+            <input type="number" id="sendAmount" placeholder="0" min="1" required>
+        </div>
+        <label class="input-label" for="sendNote">Note (Optional)</label>
+        <textarea id="sendNote" class="send-note" placeholder="Add a note for this transaction"></textarea>
+        <button type="submit" class="submit-btn send-btn">Send Funds</button>
+    </form>
+</div>
+     <!---------- Footer Section ---------->
+        <footer class="footer" role="contentinfo" aria-label="Website footer">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <!-- Logo -->
+                    <section class="footer-section" aria-labelledby="about-heading">
+                        <h2 id="about-heading" class="visually-hidden">About Swapplee</h2>
+                        <img src="./assets/images/logo.png" alt="Swapplee - Modern bartering platform" class="footer-logo" loading="lazy">
+                        <p class="footer-text">
+                            Swapplee is the modern bartering platform that helps you trade goods and services with real people in your community — simply, securely, and sustainably.
+                        </p>
+                    </section>
+
+                    <!-- Company links -->
+                    <nav class="footer-section" aria-labelledby="company-heading">
+                        <h2 id="company-heading" class="footer-subtitle">Company</h2>
+                        <ul class="footer-list">
+                            <li><a href="about.html" aria-label="About our company">About</a></li>
+                            <li><a href="#services" aria-label="Our services">Services</a></li>
+                            <li><a href="index.html" aria-label="How it works">How It Works</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Help links -->
+                    <nav class="footer-section" aria-labelledby="help-heading">
+                        <h2 id="help-heading" class="footer-subtitle">Help</h2>
+                        <ul class="footer-list">
+                            <li><a href="#" aria-label="Contact customer support">Customer Support</a></li>
+                            <li><a href="#" aria-label="Delivery information">Delivery Details</a></li>
+                            <li><a href="#" aria-label="Terms and conditions">Terms & Conditions</a></li>
+                            <li><a href="#" aria-label="Privacy policy">Privacy Policy</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Socials -->
+                    <nav class="footer-section" aria-labelledby="socials-heading">
+                        <h2 id="socials-heading" class="footer-subtitle">Socials</h2>
+                        <ul class="footer-socials">
+                            <li><a href="#" aria-label="Visit our Facebook page"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="Facebook"/></a></li>
+                            <li><a href="#" aria-label="Visit our Twitter profile"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/twitterx.png" alt="Twitter"/></a></li>
+                            <li><a href="#" aria-label="Visit our LinkedIn profile"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="LinkedIn"/></a></li>
+                            <li><a href="#" aria-label="Visit our YouTube channel"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/youtube-play.png" alt="YouTube"/></a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-bottom">
+                    <div id="footer-year" role="contentinfo">© <span id="year" aria-live="polite"></span> Swapplee. All rights reserved.</div>
+                    <nav class="footer-legal" aria-label="Legal navigation">
+                        <a href="/terms" aria-label="Terms of service">Terms</a>
+                        <a href="/privacy" aria-label="Privacy policy">Privacy</a>
+                        <a href="/cookies" aria-label="Cookie policy">Cookies</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <!---------- Footer Section End ---------->
+    <script src="./assets/js/wallet.js"></script>
+</body>
+</html>

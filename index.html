@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/pages/index.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <script defer src="./assets/js/index.js"></script>
+    <script defer type="module" src="./assets/services/render.js"></script>
+    <title>Swapplee | Homepage</title>
+</head>
+<body>
+    <!---------- Header Section ---------->
+    <header>
+        <!----------------- Location section  ------------------->
+        <section class="search-section">
+            <div class="location-search-container">
+                <div class="location-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Store Location: Lincoln - 344, Illinois, Chicago, USA</span>
+                </div>
+                <nav class="user-prefs">
+                    <div class="prefs-group">
+                        <button class="lang-btn">ENG <i class="fa-solid fa-caret-down"></i></button>
+                        <button class="currency-btn">USD <i class="fa-solid fa-caret-down"></i></button>
+                        <span class="separator">|</span>
+                    </div>
+                    <div class="auth-links">
+                        <a href="./login.html" class="auth-link">Sign In</a>
+                        <span>/</span>
+                        <a href="./signup.html "class="auth-link">Sign Up</a>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    
+        <section class="sub-navigation">
+            <nav>
+                <div class="sub-navigation-container">
+                    <a href="/" class="logo-link">
+                        <img src="./assets/images/logo.png" alt="Company logo" class="logo">
+                    </a>
+                    <div class="search-container">
+                        <form class="search-form">
+                            <div class="search-input-group">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" id="search-input" placeholder="Search by goods or services">
+                            </div>
+                            <button type="submit" class="search-button">Search</button>
+                        </form>
+                    </div>
+                    <div class="shop-preferences">
+                        <button class="icon-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <span>|</span>
+                        <button class="icon-button"><i class="fa-regular fa-heart"></i></button>
+                        <span>|</span>
+                        <div class="account-dropdown">
+                            <button class="icon-button"><i class="fa-regular fa-user"></i><i class="fa-solid fa-caret-down"></i></button>
+                        </div>
+                    </div>
+                    <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </nav>
+            <aside class="mobile-sidebar">
+                <div class="sidebar-header">
+                    <button class="close-sidebar"><i class="fa-solid fa-times"></i></button>
+                </div>
+                <div class="search-container-mobile">
+                    <form class="search-form">
+                        <div class="search-input-group">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="mobile-search-input" placeholder="Search by goods or services">
+                        </div>
+                        <button type="submit" class="search-button">Search</button>
+                    </form>
+                </div>
+                <div class="shop-preferences-mobile">
+                    <button class="icon-button"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <span>|</span>
+                    <button class="icon-button"><i class="fa-regular fa-heart"></i></button>
+                    <span>|</span>
+                    <div class="account-dropdown">
+                        <button class="icon-button"><i class="fa-regular fa-user"></i><i class="fa-solid fa-caret-down"></i></button>
+                    </div>
+                </div>
+                <nav class="mobile-links">
+                    <ul class="mobile-nav-list">
+                        <li><a href="/"  class="active">How it Works</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="product.html">Marketplace</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="contactpage.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <h5><a href="tel:+121955501114" class="phone-link">(219) 555-01114</a></h5>
+                </div>
+            </aside>
+            <div class="sidebar-overlay"></div>
+        </section>
+    
+        <section class="main-nav">
+            <div class="nav-container">
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="/"  class="active">How it Works</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="product.html">Marketplace</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="contactpage.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <h5><a href="tel:+121955501114" class="phone-link">(219) 555-01114</a></h5>
+                </div>
+            </div>
+        </section>
+        <!----------------- Main-Navigation Section End  ------------------->
+    </header>
+    <!---------- Header Section End---------->
+    <main>
+        <!---------- Hero Section ---------->
+        <div class="hero-container">
+            <div class="hero-main">
+                <div>
+                    <h1>Swap what you need for <br> what you have - No cash <br> required.</h1>
+                    <p>Swapplee is the modern bartering platform that helps you trade <br> goods and services with real people in your community — simply, <br> securely, and sustainably.</p>
+                    <div class="hero-search-container">
+                        <form role="search" class="hero-search-form">
+                            <div class="hero-search-input-group">
+                                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                                <input type="text" 
+                                    id="search-input" 
+                                    name="search" 
+                                    placeholder="Search by goods or services"
+                                    aria-label="Search products">
+                                    <button type="submit" class="hero-search-button">Start Swapping</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+    
+                <div class="image-container">
+                    <!-- Main photo -->
+                    <img class="base" src="./assets/images/hero_banner.png" alt="Main">
+    
+                    <!-- Top‐right label bubble image -->
+                    <img
+                        class="overlay-top"
+                        src="./assets/images/image_bubble.png"
+                        alt="328×77">
+    
+                    <!-- Bottom‐left chat bubble image -->
+                    <img
+                    class="overlay-bottom"
+                    src="./assets/images/image_bubble.png"
+                    alt="Make your match and swap easily">
+                </div>
+            </div>
+
+            <section class="how-it-works">
+                <div class="content">
+                    <h2 class="title">How it works</h2>
+                    <ul class="steps">
+                        <li class="step-item active">
+                            <div class="marker"></div>
+                            <div class="text">
+                                <h3>Create a profile</h3>
+                                <p>Add what you're offering and what you want. Now you can build your marketplace in minutes.</p>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <div class="marker"></div>
+                            <div class="text">
+                                <h3>Browse or get matched</h3>
+                            </div>
+                        </li>
+                            <li class="step-item">
+                            <div class="marker"></div>
+                            <div class="text">
+                                <h3>Chat &amp; negotiate</h3>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <div class="marker"></div>
+                            <div class="text">
+                                <h3>Make the swap</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="graphic">
+                    <img src="./assets/images/app_preview.png" alt="App preview"/>
+                </div>
+            </section>
+        </div>
+        <!---------- Hero Section End ---------->
+
+        <!---------- Categories Section ---------->
+        <section class="categories">
+            <div class="categories-container">
+                <h2>Swap by Categories</h2>
+                <div class="filter-buttons">
+                    <button data-filter="goods" class="btn-goods filter-active">Goods</button>
+                    <button data-filter="services" class="btn-goods">Services</button>
+                </div>
+                <div id="product-grid"></div>
+                <div class="view-products">
+                    <a href="product.html">View all</a>
+                </div>
+            </div>
+        </section>
+        <!---------- Categories Section End ---------->
+        <!---------- FAQs Section ---------->
+        <section class="faq" id="faq">
+            <h2>Frequently asked questions</h2>
+            <p class="subtitle">Everything you need to know about the product and billing.</p>
+
+            <div class="faq-container">
+                <div class="faq-item open">
+                    <button class="faq-question">
+                        <span>What is Swapplee?</span>
+                        <span class="icon">−</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Swapplee is a barter marketplace where you can trade goods, services, and skills without money.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is Swapplee free?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Creating an account and listing items or services is completely free for all users.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How are trades matched?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our smart matching algorithm pairs you with users whose listed items or services meet your request.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I trade services instead of items?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely — Swapplee is built for both goods and services. Just select “Services” in the filter.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is there buyer/seller protection?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. We offer an escrow‑style hold on trades until both parties confirm receipt and satisfaction.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How can I boost my visibility?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Fully complete your profile, add clear photos, and keep your listings up to date.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------- FAQs Section End ---------->
+        <!---------- Promotion Section ---------->
+        <section class="promotion">
+            <div class="promotion-container">
+                <div class="pr-text">
+                    <h2>Start swapping smarter. Join the <br> Swapplee movement.</h2>
+                    <button>Join the Waitlist <span>&nearr;</span></button>
+                </div>
+                <div class="pr-img">
+                    <img src="./assets/images/shade.png" alt="" class="img-1">
+                    <img src="./assets/images/swivel.png" alt="" class="img-2">
+                </div>
+            </div>
+            <div class="pr-btn">
+                <div class="btn-1">
+                    <img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/ok--v1.png" alt="ok--v1" />
+                    <h5>Fraud protection, zero liability</h5>
+                </div>
+                <div class="btn-2">
+                    <img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/ok--v1.png" alt="ok--v1" />
+                    <h5>No personal guarantee</h5>
+                </div>
+                <div class="btn-3">
+                    <img width="20" height="20" src="https://img.icons8.com/ios/50/FFFFFF/ok--v1.png" alt="ok--v1" />
+                    <h5>Swap with your choice</h5>
+                </div>
+            </div>
+
+        </section>
+        <!---------- Promotion Section End ---------->
+
+        <!---------- Footer Section ---------->
+        <footer class="footer" role="contentinfo" aria-label="Website footer">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <!-- Logo -->
+                    <section class="footer-section" aria-labelledby="about-heading">
+                        <h2 id="about-heading" class="visually-hidden">About Swapplee</h2>
+                        <img src="./assets/images/logo.png" alt="Swapplee - Modern bartering platform" class="footer-logo" loading="lazy">
+                        <p class="footer-text">
+                            Swapplee is the modern bartering platform that helps you trade goods and services with real people in your community — simply, securely, and sustainably.
+                        </p>
+                    </section>
+
+                    <!-- Company links -->
+                    <nav class="footer-section" aria-labelledby="company-heading">
+                        <h2 id="company-heading" class="footer-subtitle">Company</h2>
+                        <ul class="footer-list">
+                            <li><a href="about.html" aria-label="About our company">About</a></li>
+                            <li><a href="#services" aria-label="Our services">Services</a></li>
+                            <li><a href="index.html" aria-label="How it works">How It Works</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Help links -->
+                    <nav class="footer-section" aria-labelledby="help-heading">
+                        <h2 id="help-heading" class="footer-subtitle">Help</h2>
+                        <ul class="footer-list">
+                            <li><a href="/support" aria-label="Contact customer support">Customer Support</a></li>
+                            <li><a href="#" aria-label="Delivery information">Delivery Details</a></li>
+                            <li><a href="#" aria-label="Terms and conditions">Terms & Conditions</a></li>
+                            <li><a href="#" aria-label="Privacy policy">Privacy Policy</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Socials -->
+                    <nav class="footer-section" aria-labelledby="socials-heading">
+                        <h2 id="socials-heading" class="footer-subtitle">Socials</h2>
+                        <ul class="footer-socials">
+                            <li><a href="#" aria-label="Visit our Facebook page"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="Facebook"/></a></li>
+                            <li><a href="#" aria-label="Visit our Twitter profile"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/twitterx.png" alt="Twitter"/></a></li>
+                            <li><a href="#" aria-label="Visit our LinkedIn profile"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="LinkedIn"/></a></li>
+                            <li><a href="#" aria-label="Visit our YouTube channel"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/youtube-play.png" alt="YouTube"/></a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-bottom">
+                    <div id="footer-year" role="contentinfo">© <span id="year" aria-live="polite"></span> Swapplee. All rights reserved.</div>
+                    <nav class="footer-legal" aria-label="Legal navigation">
+                        <a href="/terms" aria-label="Terms of service">Terms</a>
+                        <a href="/privacy" aria-label="Privacy policy">Privacy</a>
+                        <a href="/cookies" aria-label="Cookie policy">Cookies</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <!---------- Footer Section End ---------->
+    </main>
+
+</body>
+</html>

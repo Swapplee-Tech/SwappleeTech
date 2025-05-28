@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify OTP - Swapplee</title>
+    <link rel="stylesheet" href="./assets/css/pages/verify-otp.css">
+    <script defer src="./assets/js/verify-otp.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="otp-container">
+        <form class="otp-form" id="otpForm">
+            <a href="login.html" class="back-to-login">
+                <i class="fas fa-caret-left"></i> <span>Back to Login</span>
+            </a>
+
+            <h2>Verify OTP</h2>
+            <p>Enter the one‑time code sent to your email</p>
+
+            <label for="otp">OTP Code</label>
+            <div class="password-field">
+                <input
+                    type="password"
+                    id="otp"
+                    name="otp"
+                    required
+                    placeholder="••••••"
+                >
+                <span class="toggle-otp">
+                    <i class="far fa-eye-slash"></i>
+                </span>
+            </div>
+
+            <div class="resend">
+                <p>Didn't receive a code? <span class="resend-link">Resend</span></p>
+            </div>
+
+            <button type="submit" class="otp-button">
+                Verify OTP
+            </button>
+        </form>
+    </section>
+</body>
+</html>
