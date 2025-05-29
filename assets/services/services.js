@@ -1,280 +1,102 @@
 export const products = [
-  {
-    id: 1,
-    imagePath: './assets/images/Library_Stool_Chair.png',
-    name: 'Library Stool Chair',
-    price: 67500,
-    isAvailable: "5 Types of shoes available",
-    ratings: '<i class="fa-solid fa-star"></i>'.repeat(4) + '<i class="fa-regular fa-star-half-stroke"></i>',
-    rateNum: 121,
-    cartText: 'Add to Cart',
-    fileIcon: '<i class="fa-regular fa-file"></i>',
-    swapIcon: '<i class="fa-solid fa-rotate"></i>',
-    tags: [
-      { position: 'top-right', bgColor: '#ffff', icon: '<i class="fa-regular fa-heart"></i>' },
-      { position: 'top-left', bgColor: '#C9FFE5', text: 'Goods', textColor: '#34A853' },
-    ],
-    type: "goods"         
-  },
-  {
-    id: 2,
-    imagePath: './assets/images/Library_Stool_Chair-1.png',
-    name: 'Library Stool Chair',
-    price: 67500,
-    isAvailable: "5 Types of shoes available",
-    ratings: '<i class="fa-solid fa-star"></i>'.repeat(4) + '<i class="fa-regular fa-star-half-stroke"></i>',
-    rateNum: 121,
-    cartText: 'Add to Cart',
-    fileIcon: '<i class="fa-regular fa-file"></i>',
-    swapIcon: '<i class="fa-solid fa-rotate"></i>',
-    tags: [
-        { position: 'top-right', bgColor: '#ffff', icon: '<i class="fa-regular fa-heart"></i>' },
-      { position: 'top-left', bgColor: '#C9FFE5', text: 'Goods', textColor: '#34A853' },
-    ],
-    type: "goods"         
-  },
-  {
-    id: 3,
-    imagePath: './assets/images/Library_Stool_Chair-2.png',
-    name: 'Library Stool Chair',
-    price: 67500,
-    isAvailable: "5 Types of shoes available",
-    ratings: '<i class="fa-solid fa-star"></i>'.repeat(4) + '<i class="fa-regular fa-star-half-stroke"></i>',
-    rateNum: 121,
-    cartText: 'Add to Cart',
-    fileIcon: '<i class="fa-regular fa-file"></i>',
-    swapIcon: '<i class="fa-solid fa-rotate"></i>',
-    tags: [
-        { position: 'top-right', bgColor: '#ffff', icon: '<i class="fa-regular fa-heart"></i>' },
-      { position: 'top-left', bgColor: '#C9FFE5', text: 'Goods', textColor: '#34A853' },
-    ],
-    type: "goods"
-  },
-  {
-    id: 4,
-    imagePath: './assets/images/Library_Stool_Chair-3.png',
-    name: 'Library Stool Chair',
-    price: 67500,
-    isAvailable: "5 Types of shoes available",
-    ratings: '<i class="fa-solid fa-star"></i>'.repeat(4) + '<i class="fa-regular fa-star-half-stroke"></i>',
-    rateNum: 121,
-    cartText: 'Add to Cart',
-    fileIcon: '<i class="fa-regular fa-file"></i>',
-    swapIcon: '<i class="fa-solid fa-rotate"></i>',
-    tags: [
-        { position: 'top-right', bgColor: '#ffff', icon: '<i class="fa-regular fa-heart"></i>' },
-      { position: 'top-left', bgColor: '#C9FFE5', text: 'Goods', textColor: '#34A853' },
-    ],
-    type: "goods"
-  },
-  {
-    id: 5,
-    imagePath: './assets/images/Library_Stool_Chair-4.png',
-    name: 'Library Stool Chair',
-    price: 67500,
-    isAvailable: "5 Types of shoes available",
-    ratings: '<i class="fa-solid fa-star"></i>'.repeat(4) + '<i class="fa-regular fa-star-half-stroke"></i>',
-    rateNum: 121,
-    cartText: 'Add to Cart',
-    fileIcon: '<i class="fa-regular fa-file"></i>',
-    swapIcon: '<i class="fa-solid fa-rotate"></i>',
-    tags: [
-      { position: 'top-right', bgColor: '#ffff', icon: '<i class="fa-regular fa-heart"></i>' },
-      { position: 'top-left', bgColor: '#C9FFE5', text: 'Goods', textColor: '#34A853' },
-    ],
-    type: "goods"         
-  },
-  {
-    id: 6,
-    imagePath: './assets/images/Library_Stool_Chair-5.png',
-    name: 'Library Stool Chair',
-    price: 67500,
-    ratings: '<i class="fa-solid fa-star"></i>'.repeat(4) + '<i class="fa-regular fa-star-half-stroke"></i>',
-    rateNum: 121,
-    isAvailable: "5 Types of shoes available",
-    cartText: 'Add to Cart',
-    fileIcon: '<i class="fa-regular fa-file"></i>',
-    swapIcon: '<i class="fa-solid fa-rotate"></i>',
-    tags: [
-    { position: 'top-right', bgColor: '#ffff', icon: '<i class="fa-regular fa-heart"></i>' },
-    { position: 'top-left', bgColor: '#C9FFE5', text: 'Goods', textColor: '#34A853' },
-    ],
-    type: "goods"         
-  },
-  {
-    id: 7,
-    imagePath: './assets/images/Library_Stool_Chair-6.png',
-    name: 'Library Stool Chair',
-    price: 67500,
-    isAvailable: "5 Types of shoes available",
-    ratings: '<i class="fa-solid fa-star"></i>'.repeat(4) + '<i class="fa-regular fa-star-half-stroke"></i>',
-    rateNum: 121,
-    cartText: 'Add to Cart',
-    fileIcon: '<i class="fa-regular fa-file"></i>',
-    swapIcon: '<i class="fa-solid fa-rotate"></i>',
-    tags: [
-      { position: 'top-right', bgColor: '#ffff', icon: '<i class="fa-regular fa-heart"></i>' },
-      { position: 'top-left', bgColor: '#C9FFE5', text: 'Goods', textColor: '#34A853' },
-    ],
-    type: "goods"         
-  },
-  {
-    id: 8,
-    imagePath: './assets/images/Library_Stool_Chair.png',
-    name: 'Library Stool Chair',
-    price: 67500,
-    isAvailable: "5 Types of shoes available",
-    ratings: '<i class="fa-solid fa-star"></i>'.repeat(4) + '<i class="fa-regular fa-star-half-stroke"></i>',
-    rateNum: 121,
-    cartText: 'Add to Cart',
-    fileIcon: '<i class="fa-regular fa-file"></i>',
-    swapIcon: '<i class="fa-solid fa-rotate"></i>',
-    tags: [
-      { position: 'top-right', bgColor: '#ffff', icon: '<i class="fa-regular fa-heart"></i>' },
-      { position: 'top-left', bgColor: '#C9FFE5', text: 'Goods', textColor: '#34A853' },
-    ],
-    type: "goods"         
-  },
-  {
-    id: 9,
-    imagePath: './assets/images/Library_Stool_Chair.png',
-    name: 'Library Stool Chair',
-    price: 67500,
-    isAvailable: "5 Types of shoes available",
-    ratings: '<i class="fa-solid fa-star"></i>'.repeat(4) + '<i class="fa-regular fa-star-half-stroke"></i>',
-    rateNum: 121,
-    cartText: 'Add to Cart',
-    fileIcon: '<i class="fa-regular fa-file"></i>',
-    swapIcon: '<i class="fa-solid fa-rotate"></i>',
-    tags: [
-       { position: 'top-right', bgColor: '#ffff', icon: '<i class="fa-regular fa-heart"></i>' },
-      { position: 'top-left', bgColor: '#C9FFE5', text: 'Goods', textColor: '#34A853' },
-    ],
-    type: "goods"         
-  },
-
     {
-    id: 10,
-    imagePath: './assets/images/Library_Stool_Chair-1.png',
-    name: 'Library Stool Chair',
-    price: 67500,
-    ratings: '<i class="fa-solid fa-star"></i>'.repeat(4) + '<i class="fa-regular fa-star-half-stroke"></i>',
-    rateNum: 121,
-    isAvailable: "5 Types of shoes available",
-    cartText: 'Add to Cart',
-    fileIcon: '<i class="fa-regular fa-file"></i>',
-    swapIcon: '<i class="fa-solid fa-rotate"></i>',
-    tags: [
-       { position: 'top-right', bgColor: '#ffff', icon: '<i class="fa-regular fa-heart"></i>' },
-      { position: 'top-left', bgColor: '#C9FFE5', text: 'Goods', textColor: '#34A853' },
-    ],
-    type: "goods"         
-  },
-
-  {
-    id: 11,
-    imagePath: './assets/images/Library_Stool_Chair-2.png',
-    name: 'Library Stool Chair',
-    price: 67500,
-    isAvailable: "5 Types of shoes available",
-    ratings: '<i class="fa-solid fa-star"></i>'.repeat(4) + '<i class="fa-regular fa-star-half-stroke"></i>',
-    rateNum: 121,
-    cartText: 'Add to Cart',
-    fileIcon: '<i class="fa-regular fa-file"></i>',
-    swapIcon: '<i class="fa-solid fa-rotate"></i>',
-    tags: [
-      { position: 'top-right', bgColor: '#ffff', icon: '<i class="fa-regular fa-heart"></i>' },
-      { position: 'top-left', bgColor: '#C9FFE5', text: 'Goods', textColor: '#34A853' },
-    ],
-    type: "goods"         
-  },
-
-  {
-    id: 12,
-    imagePath: './assets/images/Library_Stool_Chair-3.png',
-    name: 'Running Shoes',
-    price: 67500,
-    isAvailable: "5 Types of shoes available",
-    ratings: '<i class="fa-solid fa-star"></i>'.repeat(4) + '<i class="fa-regular fa-star-half-stroke"></i>',
-    rateNum: 121,
-    cartText: 'Add to Cart',
-    fileIcon: '<i class="fa-regular fa-file"></i>',
-    swapIcon: '<i class="fa-solid fa-rotate"></i>',
-    tags: [
-       { position: 'top-right', bgColor: '#ffff', icon: '<i class="fa-regular fa-heart"></i>' },
-      { position: 'top-left', bgColor: '#C9FFE5', text: 'Goods', textColor: '#34A853' },
-    ],
-    type: "goods"         
-  },
-  {
-    id: 13,
-    imagePath: './assets/images/Library_Stool_Chair-1.png',
-    name: 'Library Stool Chair',
-    price: 67500,
-    ratings: '<i class="fa-solid fa-star"></i>'.repeat(4) + '<i class="fa-regular fa-star-half-stroke"></i>',
-    rateNum: 121,
-    isAvailable: "5 Types of shoes available",
-    cartText: 'Add to Cart',
-    fileIcon: '<i class="fa-regular fa-file"></i>',
-    swapIcon: '<i class="fa-solid fa-rotate"></i>',
-    tags: [
-      { position: 'top-right', bgColor: '#ffff', icon: '<i class="fa-regular fa-heart"></i>'},
-       { position: 'top-left', bgColor: '#FFE3D3', text: 'Service', textColor: '#F5813F' }
-    ],
-    type: "services"         
-  },
-  {
-    id: 14,
-    imagePath: './assets/images/Library_Stool_Chair-1.png',
-    name: 'Library Stool Chair',
-    price: 67500,
-    ratings: '<i class="fa-solid fa-star"></i>'.repeat(4) + '<i class="fa-regular fa-star-half-stroke"></i>',
-    rateNum: 121,
-    isAvailable: "5 Types of shoes available",
-    cartText: 'Add to Cart',
-    fileIcon: '<i class="fa-regular fa-file"></i>',
-    swapIcon: '<i class="fa-solid fa-rotate"></i>',
-    tags: [
-      { position: 'top-right', bgColor: '#ffff', icon: '<i class="fa-regular fa-heart"></i>'},
-      { position: 'top-left', bgColor: '#FFE3D3', text: 'Service', textColor: '#F5813F' }
-    ],
-    type: "services"         
-  },
-  {
-    id: 15,
-    imagePath: './assets/images/Library_Stool_Chair-1.png',
-    name: 'Library Stool Chair',
-    price: 67500,
-    ratings: '<i class="fa-solid fa-star"></i>'.repeat(4) + '<i class="fa-regular fa-star-half-stroke"></i>',
-    rateNum: 121,
-    isAvailable: "5 Types of shoes available",
-    cartText: 'Add to Cart',
-    fileIcon: '<i class="fa-regular fa-file"></i>',
-    swapIcon: '<i class="fa-solid fa-rotate"></i>',
-    tags: [
-      { position: 'top-right', bgColor: '#ffff', icon: '<i class="fa-regular fa-heart"></i>'},
-       { position: 'top-left', bgColor: '#FFE3D3', text: 'Service,', textColor: '#F5813F' }
-    ],
-    type: "services"         
-  },
-  {
-    id: 16,
-   imagePath: './assets/images/Library_Stool_Chair-1.png',
-    name: 'Library Stool Chair',
-    price: 67500,
-    ratings: '<i class="fa-solid fa-star"></i>'.repeat(4) + '<i class="fa-regular fa-star-half-stroke"></i>',
-    rateNum: 121,
-    isAvailable: "5 Types of shoes available",
-    cartText: 'Add to Cart',
-    fileIcon: '<i class="fa-regular fa-file"></i>',
-    swapIcon: '<i class="fa-solid fa-rotate"></i>',
-    tags: [
-      { position: 'top-right', bgColor: '#ffff', icon: '<i class="fa-regular fa-heart"></i>'},
-       { position: 'top-left', bgColor: '#FFE3D3', text: 'Service', textColor: '#F5813F' }
-    ],
-    type: "services"         
-  },
+        id: 1,
+        user: { name: 'Emma Stone', avatar: 'https://randomuser.me/api/portraits/women/65.jpg', rating: 4.5 },
+        haveTag: { label: 'Goods', bg: '#e0f7fa', color: '#00796b' },
+        haveText: 'I Have',
+        title: 'MacBook Pro 2023 (Like New)',
+        listedDate: 'May 2nd, 2025',
+        desc: 'Used MacBook Pro M2, 16GB RAM, 512GB SSD. Includes original box & accessories',
+        image: './assets/images/product_1.png',
+        time: 'Estimated value: $1200',
+        wantText: 'Gaming PC or High-end components'
+    },
+    {
+        id: 2,
+        user: { name: 'Emma Stone', avatar: 'https://randomuser.me/api/portraits/women/66.jpg', rating: 4.5 },
+        haveTag: { label: 'Services', bg: '#FFE3D3', color: '#F5813F' },
+        haveText: 'I Have',
+        title: 'MacBook Pro 2023 (Like New)',
+        listedDate: 'May 22nd, 2025',
+        desc: 'Used MacBook Pro M2, 16GB RAM, 512GB SSD. Includes original box & accessories',
+        image: './assets/images/product_1.png',
+        time: 'Estimated value: $1200',
+        wantText: 'Gaming PC or High-end components'
+    },
+    {
+        id: 3,
+        user: { name: 'Emma Stone', avatar: 'https://randomuser.me/api/portraits/women/67.jpg', rating: 4.5 },
+        haveTag: { label: 'Goods', bg: '#e0f7fa', color: '#00796b' },
+        haveText: 'I Have',
+        title: 'MacBook Pro 2023 (Like New)',
+        listedDate: 'May 3rd, 2025',
+        desc: 'Used MacBook Pro M2, 16GB RAM, 512GB SSD. Includes original box & accessories',
+        image: './assets/images/product_1.png',
+        time: 'Estimated value: $1200',
+        wantText: 'Gaming PC or High-end components'
+    },
+    {
+        id: 4,
+        user: { name: 'Emma Stone', avatar: 'https://randomuser.me/api/portraits/women/68.jpg', rating: 4.5 },
+        haveTag: { label: 'Services', bg: '#FFE3D3', color: '#F5813F' },
+        haveText: 'I Have',
+        title: 'MacBook Pro 2023 (Like New)',
+        listedDate: 'May 3rd, 2025',
+        desc: 'Used MacBook Pro M2, 16GB RAM, 512GB SSD. Includes original box & accessories',
+        image: './assets/images/product_1.png',
+        time: 'Estimated value: $1200',
+        wantText: 'Gaming PC or High-end components'
+    },
+    {
+        id: 5,
+        user: { name: 'Emma Stone', avatar: 'https://randomuser.me/api/portraits/women/69.jpg', rating: 4.5 },
+        haveTag: { label: 'Goods', bg: '#e0f7fa', color: '#00796b' },
+        haveText: 'I Have',
+        title: 'MacBook Pro 2023 (Like New)',
+        listedDate: 'May 3rd, 2025',
+        desc: 'Used MacBook Pro M2, 16GB RAM, 512GB SSD. Includes original box & accessories',
+        image: './assets/images/product_1.png',
+        time: 'Estimated value: $1200',
+        wantText: 'Gaming PC or High-end components'
+    },
+    {
+        id: 6,
+        user: { name: 'Emma Stone', avatar: 'https://randomuser.me/api/portraits/women/70.jpg', rating: 4.5 },
+        haveTag: { label: 'Services', bg: '#FFE3D3', color: '#F5813F' },
+        haveText: 'I Have',
+        title: 'MacBook Pro 2023 (Like New)',
+        listedDate: 'May 3rd, 2025',
+        desc: 'Used MacBook Pro M2, 16GB RAM, 512GB SSD. Includes original box & accessories',
+        image: './assets/images/product_1.png',
+        time: 'Estimated value: $1200',
+        wantText: 'Gaming PC or High-end components'
+    },
+    {
+        id: 7,
+        user: { name: 'Emma Stone', avatar: 'https://randomuser.me/api/portraits/women/2.jpg', rating: 4.5 },
+        haveTag: { label: 'Goods', bg: '#e0f7fa', color: '#00796b' },
+        haveText: 'I Have',
+        title: 'MacBook Pro 2023 (Like New)',
+        listedDate: 'May 3rd, 2025',
+        desc: 'Used MacBook Pro M2, 16GB RAM, 512GB SSD. Includes original box & accessories',
+        image: './assets/images/product_1.png',
+        time: 'Estimated value: $1200',
+        wantText: 'Gaming PC or High-end components'
+    },
+    {
+        id: 8,
+        user: { name: 'Emma Stone', avatar: 'https://randomuser.me/api/portraits/women/3.jpg', rating: 4.5 },
+        haveTag: { label: 'Services', bg: '#FFE3D3', color: '#F5813F' },
+        haveText: 'I Have',
+        title: 'MacBook Pro 2023 (Like New)',
+        listedDate: 'May 10th, 2025',
+        desc: 'Used MacBook Pro M2, 16GB RAM, 512GB SSD. Includes original box & accessories',
+        image: './assets/images/product_1.png',
+        time: 'Estimated value: $1200',
+        wantText: 'Gaming PC or High-end components'
+    }
 ];
+
 
 
 // chat data

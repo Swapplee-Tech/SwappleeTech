@@ -1,76 +1,83 @@
 import { products } from "./services.js";
 
-const grid    = document.getElementById("product-grid");
-const buttons = document.querySelectorAll(".filter-buttons button");
-
-function renderGrid(filterType) {
-  grid.innerHTML = "";
-
-  products
-    .filter(p => p.type === filterType)
-    .forEach(p => {
-      const card = document.createElement("div");
-      card.className = "product-card";
-
-      const tagsHtml = p.tags.map(tag => {
-        const content = tag.icon ?? tag.text;
-        const colorPart = tag.textColor ? `;color:${tag.textColor}` : "";
-        return `<span class="tag ${tag.position}" style="background:${tag.bgColor}${colorPart}">${content}</span>`;
-      }).join("");
-
-      card.innerHTML = `
-        <div class="product-image">
-          ${tagsHtml}
-          <img src="${p.imagePath}" alt="${p.name}">
-        </div>
-        <div class="details">
-          <div class="price">
-            <h4>${p.name}</h4>
-            <span class="current">&#8358;${p.price.toFixed(2)}</span>
-          </div>
-          <div class="desc">
-            ${p.isAvailable}
-          </div>
-          <div class="ratings">
-            <span style= "color: gold">${p.ratings}</span>
-            <span class= "rateNum">(${p.rateNum})</span>
-          </div>
-          <div class="cart">
-            <button class="add-cart">${p.cartText}</button>
-            <button class="comments">${p.fileIcon}</button>
-            <button class="swap">${p.swapIcon}</button>
-          </div>
-        </div>
-      `;
-      grid.appendChild(card);
-    });
-}
-
-buttons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    buttons.forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-    renderGrid(btn.dataset.filter);
-  });
-});
-
-// initial render
-renderGrid("goods");
-
-grid.addEventListener("click", e => {
-  const icon = e.target;
-  if ( icon.closest('.tag.top-right') && icon.tagName === 'I' ) {
-    if ( icon.classList.contains('fa-regular') || icon.classList.contains('far') ) {
-      icon.classList.replace('fa-regular', 'fa-solid');
-      // icon.classList.replace(      'far',     'fas');
-    } else {
-      icon.classList.replace('fa-solid',  'fa-regular');
-      // icon.classList.replace(    'fas',          'far');
+document.addEventListener('DOMContentLoaded', () => {
+    const grid = document.getElementById('productsGrid');
+    const filterButtons = document.querySelectorAll('.filter-buttons button');
+    
+    // Function to filter products by category
+    function filterProducts(category) {
+        return products.filter(product => 
+            product.haveTag.label.toLowerCase() === category
+        );
     }
-  }
+
+    // Main render function
+    function renderProducts(productsToRender) {
+        grid.innerHTML = '';
+        
+        productsToRender.forEach(p => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.innerHTML = `
+                <div class="card-header">
+                    <img class="avatar" src="${p.user.avatar}" alt="${p.user.name}" />
+                    <div class="user-info">
+                        <span class="name">${p.user.name}</span>
+                        <span class="rating"><i class="fa-solid fa-star"></i> ${p.user.rating}</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="have-label"><i class="fa-solid fa-gift"></i> ${p.haveText}</div>
+                    <h3 class="title">${p.title}</h3>
+                    <p class="desc">${p.desc}</p>
+                    <div class="image-wrapper">
+                        <img src="${p.image}" alt="${p.title}" />
+                        <span class="tag" style="background:${p.haveTag.bg};color:${p.haveTag.color}">${p.haveTag.label}</span>
+                        <i class="fa-regular fa-heart favor"></i>
+                    </div>
+                    <div class="time"><i class="fa-regular fa-clock"></i> ${p.time}</div>
+                </div>
+                <div class="card-footer">
+                    <div class="footer-have"><i class="fa-solid fa-gift"></i> I want</div>
+                    <div class="footer-want-text">${p.wantText}</div>
+                    <button class="footer-button"><i class="fa-solid fa-arrows-turn-to-dots "></i> Propose Trade</button>
+                </div>
+            `;
+            card.querySelector('.footer-button').addEventListener('click', () => {
+                window.location.href = `product-details.html?id=${p.id}`;
+            });
+            grid.appendChild(card);
+        });
+
+        attachHeartIcons();
+    }
+
+    // Filter button functionality
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('filter-active'));
+            
+            // Add active class to clicked button
+            button.classList.add('filter-active');
+            
+            // Filter and render products
+            const category = button.dataset.filter;
+            const filteredProducts = filterProducts(category);
+            renderProducts(filteredProducts);
+        });
+    });
+
+    // Heart icon functionality
+    function attachHeartIcons() {
+        document.querySelectorAll('.favor').forEach(icon => {
+            icon.addEventListener('click', () => {
+                icon.classList.toggle('fa-regular');
+                icon.classList.toggle('fa-solid');
+            });
+        });
+    }
+
+    // Initial render - show Goods by default
+    renderProducts(filterProducts('goods'));
 });
-
-
-
-
-
